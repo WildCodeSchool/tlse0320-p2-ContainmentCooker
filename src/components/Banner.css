@@ -1,0 +1,48 @@
+.Bann {
+  font-family: 'Bree Serif', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.Banner {
+  background-image: url('BannerImg.jpg');
+  background-size: 90% 600px;
+  height: 600px;
+  width: 90%;
+  display: inherit;
+  margin: auto;
+  flex-direction: column;
+}
+
+#Title {
+  font-size: 45px;
+  margin-top: 20%;
+  margin-left: 10%;
+  color: whitesmoke;
+  font-weight: bold;
+  display: flex;
+}
+
+#Title:hover {
+  cursor: pointer;
+  color: #ca2017;
+}
+
+.BannerBottom {
+  background-color: rgb(43, 42, 41);
+  background-size: 90% 50px;
+  height: 50x;
+  width: 90%;
+  margin: auto;
+  color: white;
+  display: inherit;
+}
+
+.TitleBanner {
+  margin: auto;
+}
+
+.TitleBanner:hover {
+  cursor: pointer;
+  color: #ca2017;
+}
