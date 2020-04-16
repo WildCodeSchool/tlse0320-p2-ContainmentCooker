@@ -1,0 +1,132 @@
+.Bann {
+  font-family: 'Slabo 27px', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.BannerUp {
+  background-image: url('BannerImg.png');
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.BannerUp {
+  filter: saturate(150%);
+  -webkit-filter: saturate(150%);
+  -moz-filter: saturate(150%);
+  -o-filter: saturate(150%);
+  -ms-filter: saturate(150%);
+}
+
+.TitleButton {
+  padding-top: 10%;
+  margin-left: 10%;
+}
+
+.TitleRecipe {
+  font-size: 55px;
+  color: whitesmoke;
+  font-weight: bold;
+  display: flex;
+}
+
+.TitleRecipe:hover {
+  color: blanchedalmond;
+  text-shadow: 0 0 5px blanchedalmond;
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.ButtonBanner {
+  border: none;
+  outline: none;
+  display: inherit;
+  margin-left: 35%;
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  background: transparent;
+  box-shadow: 0 3px 20px 0 #ecd9d93b;
+}
+
+.ButtonBanner:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px blanchedalmond;
+}
+
+.ButtonBanner:hover {
+  color: blanchedalmond;
+  box-shadow: 0 0 5px blanchedalmond;
+  text-shadow: 0 0 5px blanchedalmond;
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.LogosBanner {
+  display: inherit;
+  flex-direction: row;
+  width: 120px;
+  height: 120px;
+  padding: 5%;
+  padding-left: 5%;
+  justify-content: space-between;
+}
+
+.HamLogo {
+  padding-left: 100%;
+}
+
+.RibsLogo {
+  padding-left: 100%;
+}
+
+.BannerBottom {
+  background-color: rgb(20, 20, 20);
+  background-size: 90% 50px;
+  height: 50x;
+  width: 90%;
+  margin: auto;
+  color: white;
+  display: inherit;
+}
+
+.TitleBanner {
+  margin: auto;
+}
+
+.TitleBanner:hover {
+  color: blanchedalmond;
+  text-shadow: 0 0 5px blanchedalmond;
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .BannerUp {
+    height: 400px;
+  }
+
+  .TitleRecipe {
+    margin: auto;
+    padding: 5%;
+  }
+
+  .TitleBanner {
+    display: none;
+  }
+
+  .LogosBanner {
+    display: none;
+  }
+}
