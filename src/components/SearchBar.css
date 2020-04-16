@@ -1,0 +1,59 @@
+body {
+  background: url('https://image.freepik.com/photos-gratuite/veritable-fond-ardoise_103577-3460.jpg');
+  background-size: 100%;
+}
+#searcharea {
+  display: flex;
+  justify-content: center;
+}
+#searchsubmit {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: solid 2px black;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  border-radius: 180px;
+  margin-top: 18px;
+}
+#bar {
+  width: 30%;
+  line-height: 25px;
+  padding: 10px 10px 10px 10px;
+  border: solid 2px black;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  margin: 20px 4px 10px;
+  border-radius: 20px;
+}
+#advancedbutton {
+  width: auto;
+  line-height: 30px;
+  text-align: center;
+  background: url('https://image.freepik.com/photos-gratuite/texture-ardoise-noire-gris-fonce-haute-resolution-fond-mur-pierre-noire-naturelle_38607-520.jpg')
+    no-repeat;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+#advancedbutton:hover {
+  background: url('https://image.freepik.com/photos-gratuite/fond-ardoise_23-2148349439.jpg');
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #bar {
+    font-size: 10px;
+    width: auto;
+    height: 10px;
+  }
+  #searchsubmit {
+    height: 10px;
+    width: 10px;
+    padding: 8px;
+    margin-top: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+}
