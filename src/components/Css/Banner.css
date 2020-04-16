@@ -1,5 +1,6 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
 .Bann {
-  font-family: 'Slabo 27px', serif;
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +29,9 @@
 }
 
 .TitleRecipe {
-  font-size: 55px;
+  font-family: 'Dancing Script', sans serif;
+  font-weight: bold;
+  font-size: 75px;
   color: whitesmoke;
   font-weight: bold;
   display: flex;
@@ -44,6 +47,8 @@
 }
 
 .ButtonBanner {
+  font-family: 'Dancing Script', sans serif;
+  font-size: 20px;
   border: none;
   outline: none;
   display: inherit;
@@ -101,6 +106,8 @@
 
 .TitleBanner {
   margin: auto;
+  font-family: 'Dancing Script', sans serif;
+  font-size: 30px;
 }
 
 .TitleBanner:hover {
