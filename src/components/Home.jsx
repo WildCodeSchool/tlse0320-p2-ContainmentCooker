@@ -1,21 +1,18 @@
 import React from 'react';
 import Banner from './Banner';
-
-/* import './Advert';
-import './CategoriesList';
-import './Footer';
-import './Header';
-import './SearchBar';
-import { Header } from './Header';
-
-import { SearchBar } from './SearchBar';
-import { CategoriesList } from './CategoriesList';
-import { Advert } from './Advert'; */
+import CategoriesList from './CategoriesList';
+import SearchBar from './SearchBar';
+import Header from './Header';
+import Footer from './Footer';
 
 function Home() {
   return (
-    <div className="App">
+    <div>
+      <Header />
       <Banner />
+      <SearchBar />
+      <CategoriesList />
+      <Footer />
     </div>
   );
 }
