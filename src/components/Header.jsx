@@ -8,7 +8,7 @@ const Header = props => {
 
   return (
     <div>
-      <Navbar fixed="top" color="dark" dark expand="md">
+      <Navbar className="Navbar" dark expand="md">
         <NavbarBrand href="/">
           <img
             src="https://iili.io/JzNRz7.png"
@@ -16,7 +16,7 @@ const Header = props => {
             height="132"
             className="d-inline-flex align-top"
             alt="logo"
-          ></img>
+          />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

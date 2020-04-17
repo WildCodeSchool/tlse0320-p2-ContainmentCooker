@@ -1,20 +1,21 @@
 import React from 'react';
 import './Footer.css';
+
 function Footer() {
   return (
     <footer>
-      <ul class="footer1">
+      <ul className="footer1">
         <li>Newsletter</li>
         <li>
           <input type="email" name="email" placeholder="@" />
         </li>
         <li>
-          <button class="button" title="S'abonner">
+          <button type="button" className="button" title="S'abonner">
             S'abonner
           </button>
         </li>
       </ul>
-      <ul class="footer2">
+      <ul className="footer2">
         <li>
           <a href="aboutus.html" title="A propos de l'équipe">
             À propos

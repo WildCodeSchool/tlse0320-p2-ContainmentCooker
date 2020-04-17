@@ -4,10 +4,11 @@ import CategoriesList from './CategoriesList';
 import SearchBar from './SearchBar';
 import Header from './Header';
 import Footer from './Footer';
+import './Home.css';
 
 function Home() {
   return (
-    <div>
+    <div className="global">
       <Header />
       <Banner />
       <SearchBar />

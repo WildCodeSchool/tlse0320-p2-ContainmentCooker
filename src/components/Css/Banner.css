@@ -1,15 +1,19 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
+.App {
+  background-image: url 'https://image.freepik.com/photos-gratuite/fond-ardoise_23-2148349439.jpg';
+}
 .Bann {
   display: flex;
   flex-direction: column;
 }
 
 .BannerUp {
+  padding-top: 100px;
   background-image: url('BannerImg.png');
   background-repeat: no-repeat;
   height: 600px;
-  width: 90%;
+  width: 100%;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -77,6 +81,8 @@
 }
 
 .LogosBanner {
+  position: relative;
+  z-index: 1;
   display: inherit;
   flex-direction: row;
   width: 120px;
@@ -95,19 +101,19 @@
 }
 
 .BannerBottom {
-  background-color: rgb(20, 20, 20);
   background-size: 90% 50px;
   height: 50x;
-  width: 90%;
+  width: 100%;
   margin: auto;
   color: white;
   display: inherit;
+  padding-bottom: 100px;
 }
 
 .TitleBanner {
   margin: auto;
   font-family: 'Dancing Script', sans serif;
-  font-size: 30px;
+  font-size: 6opx;
 }
 
 .TitleBanner:hover {
@@ -121,7 +127,7 @@
 
 @media (max-width: 1024px) {
   .BannerUp {
-    height: 400px;
+    height: 530px;
   }
 
   .TitleRecipe {
