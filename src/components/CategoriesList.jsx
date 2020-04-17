@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import Categories from './Categories_levrai';
+import Categories from './Categories';
 import '../css/CategoriesList.css';
 
 class CategoriesList extends Component {
@@ -15,4 +14,4 @@ class CategoriesList extends Component {
   }
 }
 
-export { CategoriesList };
+export default CategoriesList;
