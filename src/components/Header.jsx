@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Header.css';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavbarText } from 'reactstrap';
 
 const Header = props => {
@@ -7,14 +8,14 @@ const Header = props => {
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
+      <Navbar fixed="top" color="dark" dark expand="md">
         <NavbarBrand href="/">
           <img
             src="https://iili.io/JzNRz7.png"
             width="650"
             height="132"
-            className="d-inline-block align-top"
-            alt=""
+            className="d-inline-flex align-top"
+            alt="logo"
           ></img>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
