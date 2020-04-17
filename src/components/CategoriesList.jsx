@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Categories from './Categories';
 import '../css/CategoriesList.css';
 
@@ -15,4 +14,4 @@ class CategoriesList extends Component {
   }
 }
 
-export { CategoriesList };
+export default CategoriesList;
