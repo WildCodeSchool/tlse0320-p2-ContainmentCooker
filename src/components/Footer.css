@@ -1,3 +1,26 @@
 .footer1 {
   padding-top: 50px;
 }
+
+footer li,
+footer a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.socialNet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socialNet li img {
+  height: 35px;
+  width: auto;
+}
+
+.footer3 {
+  margin: 12px;
+}

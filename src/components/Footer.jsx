@@ -1,49 +1,65 @@
 import React from 'react';
 import './Footer.css';
+import { Button, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
+import Facebook from './faceb.png';
+import Instagram from './insta.png';
+import Youtube from './yt.png';
+import Tweeter from './tweet.png';
 
 function Footer() {
   return (
-    <footer>
-      <ul className="footer1">
-        <li>Newsletter</li>
-        <li>
-          <input type="email" name="email" placeholder="@" />
-        </li>
-        <li>
-          <button type="button" className="button" title="S'abonner">
-            S'abonner
-          </button>
-        </li>
-      </ul>
-      <ul className="footer2">
-        <li>
-          <a href="aboutus.html" title="A propos de l'équipe">
-            À propos
-          </a>
-        </li>
-        <li>
-          <a href="#" title="Mentions légales">
-            Mentions légales
-          </a>
-        </li>
-      </ul>
-      <div class="footer3">
-        <ul class="socialNet">
+    <div>
+      <div>
+        <ul className="footer1">
+          <li>Newsletter</li>
           <li>
-            <img src="img/faceb.png" alt="Facebook" />
-          </li>
-          <li>
-            <img src="img/tweet.png" alt="Tweeter" />
-          </li>
-          <li>
-            <img src="img/insta.png" alt="Instagram" />
-          </li>
-          <li>
-            <img src="img/yt.png" alt="Youtube" />
+            <input type="email" name="email" placeholder="@" />
           </li>
         </ul>
       </div>
-    </footer>
+      <div>
+        <Button id="UncontrolledPopover" type="button">
+          S'abonner
+        </Button>
+        <UncontrolledPopover placement="bottom" target="UncontrolledPopover">
+          <PopoverHeader>Abonnement réussi</PopoverHeader>
+          <PopoverBody>
+            C'est bon , vous etes bien inscrit à notre Newsletter, vous recevrez toutes les News du
+            site .
+          </PopoverBody>
+        </UncontrolledPopover>
+      </div>
+      <div>
+        <ul className="footer2">
+          <li>
+            <a href="aboutus.html" title="A propos de l'équipe">
+              À propos
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Mentions légales">
+              Mentions légales
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer3">
+        <ul className="socialNet">
+          <li>
+            <img src={Facebook} alt="Facebook" />
+          </li>
+          <li>
+            <img src={Tweeter} alt="Tweeter" />
+          </li>
+          <li>
+            <img src={Instagram} alt="Instagram" />
+          </li>
+          <li>
+            <img src={Youtube} alt="Youtube" />
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
 
