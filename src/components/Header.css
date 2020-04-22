@@ -1,0 +1,18 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+body {
+  background-image: url('https://image.freepik.com/photos-gratuite/veritable-fond-ardoise_103577-3460.jpg');
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  height: 200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.fixed-top {
+  position: relative;
+}

@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+h2 {
+  font-family: 'Dancing Script', sans serif;
+  font-size: 40px;
+  color: white;
+}
+#searcharea {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#searchsubmit {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: solid 2px black;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  border-radius: 180px;
+  margin-top: 6px;
+}
+#bar {
+  width: 30%;
+  line-height: 25px;
+  padding: 10px 10px 10px 10px;
+  border: solid 2px black;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  margin: 5px 4px 10px;
+  border-radius: 20px;
+}
+#advancedbutton {
+  width: auto;
+  font-family: 'Dancing';
+  text-align: center;
+  background: url('https://image.freepik.com/photos-gratuite/texture-ardoise-noire-gris-fonce-haute-resolution-fond-mur-pierre-noire-naturelle_38607-520.jpg');
+  color: white;
+  font-size: 15px;
+  height: 40px;
+}
+#advancedbutton:hover {
+  background: url('https://image.freepik.com/photos-gratuite/fond-ardoise_23-2148349439.jpg');
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #bar {
+    font-size: 10px;
+    width: auto;
+    height: 8px;
+    margin-bottom: 5px;
+  }
+  #searchsubmit {
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    margin-top: 9px;
+  }
+  #advancedbutton {
+    height: 25px;
+    padding: 2px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+}
