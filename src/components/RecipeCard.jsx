@@ -39,7 +39,7 @@ function RecipeCard({ meals }) {
             </li>
             <li>
               Ingredient 4:
-              {meal.strIngedient4}
+              {meal.strIngredient4}
             </li>
             <li>
               Measure 1:
