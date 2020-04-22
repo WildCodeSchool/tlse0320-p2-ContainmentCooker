@@ -3,6 +3,7 @@
   flex-direction: column;
   margin: auto;
   color: white;
+  font-family: 'Dancing Script', sans serif;
 }
 
 .ImgRecipe {
@@ -16,4 +17,7 @@
 
 .RecipeList {
   color: white;
+  font-family: 'Dancing Script', sans serif;
+  font-size: 25px;
+  display: inherit;
 }

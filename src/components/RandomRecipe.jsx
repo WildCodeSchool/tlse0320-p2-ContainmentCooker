@@ -1,8 +1,9 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import axios from 'axios';
+import { Button } from 'reactstrap';
 import RecipeCard from './RecipeCard';
-import './RecipeCard.css';
+import './Css/RecipeCard.css';
 
 class RandomRecipe extends React.Component {
   constructor(props) {
@@ -32,9 +33,9 @@ class RandomRecipe extends React.Component {
     return (
       <div className="RandomRecipe">
         {this.state.meals && <RecipeCard meals={this.state.meals} />}
-        <button type="button" onClick={this.getRecipe}>
+        <Button type="button" color="secondary" size="lg" onClick={this.getRecipe}>
           Random recipe
-        </button>
+        </Button>
       </div>
     );
   }

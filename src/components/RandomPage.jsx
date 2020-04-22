@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Home.css';
 import RandomRecipe from './RandomRecipe';
 import Header from './Header';
