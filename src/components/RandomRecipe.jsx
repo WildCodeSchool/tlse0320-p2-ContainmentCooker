@@ -2,15 +2,13 @@
 import React from 'react';
 import axios from 'axios';
 import RecipeCard from './RecipeCard';
-import './RandomPage.css';
+import './RecipeCard.css';
 
 class RandomRecipe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      recipe: {
-        strMeal: ''
-      }
+      meals: []
     };
     this.getRecipe = this.getRecipe.bind(this);
   }
@@ -25,7 +23,7 @@ class RandomRecipe extends React.Component {
       .then(response => response.data)
       .then(data => {
         this.setState({
-          recipe: data
+          meals: data.meals
         });
       });
   }
@@ -33,7 +31,7 @@ class RandomRecipe extends React.Component {
   render() {
     return (
       <div className="RandomRecipe">
-        {this.state.recipe && <RecipeCard recipe={this.state.recipe} />}
+        {this.state.meals && <RecipeCard meals={this.state.meals} />}
         <button type="button" onClick={this.getRecipe}>
           Random recipe
         </button>

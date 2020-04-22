@@ -9,9 +9,9 @@ function Banner() {
     <div className="Bann">
       <div className="BannerUp">
         <div className="TitleButton">
-          <h1 className="TitleRecipe"> Grilled Meat Skewers </h1>
+          <h1 className="TitleRecipe"> Don't have any idea ? </h1>
           <button type="button" className="ButtonBanner">
-            See the recipe
+            See a recipe
           </button>
         </div>
         <div className="LogosBanner">

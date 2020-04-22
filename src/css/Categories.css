@@ -1,10 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
-img {
-  width: 100%;
-  border-radius: 5%;
-}
-
 .col {
   padding: 1%;
   position: relative;
