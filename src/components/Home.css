@@ -1,0 +1,12 @@
+.global {
+  background-image: url
+    'http://www.highgradelab.com/sage/steak-house/wp-content/uploads/sites/6/2015/09/dark-pattern.png?id=33';
+  width: 100%;
+  margin: auto;
+}
+
+.App {
+  width: 90%;
+  margin: auto;
+  background-image: url('wood.jpg');
+}
