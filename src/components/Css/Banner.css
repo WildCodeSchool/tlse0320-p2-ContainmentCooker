@@ -112,8 +112,9 @@
 
 .TitleBanner {
   margin: auto;
+  color: white;
   font-family: 'Dancing Script', sans serif;
-  font-size: 6opx;
+  font-size: 50px;
 }
 
 .TitleBanner:hover {
