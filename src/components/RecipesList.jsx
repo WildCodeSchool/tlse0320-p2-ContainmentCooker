@@ -1,5 +1,6 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
+import PropTypes from 'prop-types';
 import {
   Card,
   CardImg,
@@ -23,6 +24,15 @@ class RecipesList extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const {
+      match: {
+        params: { strCategorie }
+      }
+    } = this.props;
+    this.loadCategorieList(strCategorie);
+  }
+
   componentDidUpdate(prevProps) {
     const {
       match: {
@@ -33,12 +43,6 @@ class RecipesList extends React.Component {
     if (prevCategorieId !== strCategorie) {
       this.loadCategorieList(strCategorie);
     }
-  }
-
-  componentDidMount() {
-    const strCategorie = this.props.match.params.strCategorie;
-    console.log(strCategorie);
-    this.loadCategorieList(strCategorie);
   }
 
   loadCategorieList(strCategorie) {
@@ -53,10 +57,9 @@ class RecipesList extends React.Component {
   }
 
   render() {
-    const meals = this.state.meals;
-    console.log(meals);
+    const { meals } = this.state;
     return (
-      <Container fluid={true}>
+      <Container fluid>
         <div className="recipes-list-container">
           <Row xs="1" sm="2" md="3" xl="4">
             {meals.map(meal => (
@@ -88,5 +91,10 @@ class RecipesList extends React.Component {
     );
   }
 }
+
+RecipesList.propTypes = {
+  strCategorie: PropTypes.arrayOf(PropTypes.string).isRequired,
+  match: PropTypes.arrayOf(PropTypes.any).isRequired
+};
 
 export default withRouter(RecipesList);

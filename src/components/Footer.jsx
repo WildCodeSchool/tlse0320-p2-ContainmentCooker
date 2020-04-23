@@ -27,8 +27,8 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <div class="footer3">
-        <ul class="socialNet">
+      <div className="footer3">
+        <ul className="socialNet">
           <li>
             <img src="img/faceb.png" alt="Facebook" />
           </li>
