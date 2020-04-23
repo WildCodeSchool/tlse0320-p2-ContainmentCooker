@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-const Example = props => {
+const ContactForm = props => {
   return (
     <Form>
       <FormGroup>
@@ -21,7 +21,7 @@ const Example = props => {
       </FormGroup>
       <FormGroup check>
         <Label check>
-          <Input type="radio" name="radio1" /> I want to the get the monthly newsletter
+          <Input type="radio" name="radio1" />I want to the get the monthly newsletter
         </Label>
       </FormGroup>
       <Button>Submit</Button>
@@ -29,4 +29,4 @@ const Example = props => {
   );
 };
 
-export default Example;
+export default ContactForm;
