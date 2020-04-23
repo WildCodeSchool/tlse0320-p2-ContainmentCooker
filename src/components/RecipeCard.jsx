@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function RecipeCard({ meals }) {
   return (
@@ -63,5 +63,9 @@ function RecipeCard({ meals }) {
     </div>
   );
 }
+
+RecipeCard.propTypes = {
+  meals: PropTypes.string.isRequired
+};
 
 export default RecipeCard;
