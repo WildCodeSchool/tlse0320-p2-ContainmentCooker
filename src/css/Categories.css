@@ -1,10 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
-img {
-  width: 100%;
-  border-radius: 5%;
-}
-
 .categories-link {
   color: white;
   text-decoration: none;
@@ -14,7 +9,7 @@ img {
   color: white;
 }
 
-.col {
+.container-image {
   padding: 1%;
   position: relative;
   text-emphasis: center;
@@ -69,6 +64,8 @@ img {
 }
 
 .categorie-image {
+  width: 100%;
+  border-radius: 5%;
   overflow: hidden;
   position: relative;
   opacity: 0.75;
@@ -103,7 +100,7 @@ img {
     font-size: 20px;
   }
 
-  img {
+  .categorie-image {
     width: 100%;
     display: block;
     margin-left: auto;
@@ -135,7 +132,7 @@ img {
     font-size: 30px;
   }
 
-  img {
+  .categorie-image {
     width: 100%;
     display: block;
     margin-left: auto;

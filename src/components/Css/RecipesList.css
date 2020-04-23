@@ -4,6 +4,10 @@
   margin-left: auto;
 }
 
+.container-card-recipe {
+  padding: 1%;
+}
+
 .card-title {
   color: black;
   white-space: nowrap;

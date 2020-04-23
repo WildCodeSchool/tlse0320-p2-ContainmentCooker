@@ -13,7 +13,7 @@ const Categories = () => {
         <span>Recipes made with love</span>
       </div>
       <Row xs="2" sm="3" md="4">
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/beef" className="categories-link">
             <img
               className="categorie-image"
@@ -25,7 +25,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/breakfast" className="categories-link">
             <img
               className="categorie-image"
@@ -37,7 +37,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/chicken" className="categories-link">
             <img
               className="categorie-image"
@@ -49,7 +49,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/dessert" className="categories-link">
             <img
               className="categorie-image"
@@ -61,7 +61,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/goat" className="categories-link">
             <img
               className="categorie-image"
@@ -73,7 +73,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/lamb" className="categories-link">
             <img
               className="categorie-image"
@@ -85,7 +85,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/miscellaneous" className="categories-link">
             <img
               className="categorie-image"
@@ -97,7 +97,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/pasta" className="categories-link">
             <img
               className="categorie-image"
@@ -109,7 +109,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/dessert" className="categories-link">
             <img
               className="categorie-image"
@@ -121,7 +121,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/seafood" className="categories-link">
             <img
               className="categorie-image"
@@ -133,7 +133,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/side" className="categories-link">
             <img
               className="categorie-image"
@@ -145,7 +145,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/starter" className="categories-link">
             <img
               className="categorie-image"
@@ -157,7 +157,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/vegan" className="categories-link">
             <img
               className="categorie-image"
@@ -169,7 +169,7 @@ const Categories = () => {
             </div>
           </Link>
         </Col>
-        <Col>
+        <Col className="container-image">
           <Link to="/list-categories/vegetarian" className="categories-link">
             <img
               className="categorie-image"

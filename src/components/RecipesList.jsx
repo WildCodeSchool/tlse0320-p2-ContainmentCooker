@@ -60,7 +60,7 @@ class RecipesList extends React.Component {
         <div className="recipes-list-container">
           <Row xs="1" sm="2" md="3" xl="4">
             {meals.map(meal => (
-              <Col>
+              <Col className="container-card-recipe">
                 <Card>
                   <CardImg top src={meal.strMealThumb} alt={meal.strMeal} className="card-image" />
                   <div className="card-heart">
