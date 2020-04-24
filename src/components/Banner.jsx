@@ -25,7 +25,9 @@ function Banner() {
       </div>
       <div className="BannerBottom">
         <h2 className="TitleBanner">Recipes</h2>
-        <h2 className="TitleBanner">Contact</h2>
+        <Link to="/contact" className="TitleBanner">
+          Contact
+        </Link>
       </div>
     </div>
   );
