@@ -1,6 +1,15 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
-.col {
+.categories-link {
+  color: white;
+  text-decoration: none;
+}
+
+.categories-link:hover {
+  color: white;
+}
+
+.container-image {
   padding: 1%;
   position: relative;
   text-emphasis: center;
@@ -8,7 +17,7 @@
   margin-top: 1%;
 }
 
-.categorie-title::after {
+.categorie-title-main::after {
   content: '';
   display: block;
   width: 60px;
@@ -18,7 +27,7 @@
   box-shadow: 2px 2px 2px black;
 }
 
-.categorie-title {
+.categorie-title-main {
   font-size: 60px;
   color: white;
   font-family: Dancing Script, sans-serif;
@@ -37,7 +46,7 @@
   padding: 0;
 }
 
-p {
+.title-categorie {
   font-size: 25px;
   padding: 3%;
   margin-bottom: 10%;
@@ -55,6 +64,8 @@ p {
 }
 
 .categorie-image {
+  width: 100%;
+  border-radius: 5%;
   overflow: hidden;
   position: relative;
   opacity: 0.75;
@@ -81,7 +92,7 @@ p {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .categorie-title {
+  .categorie-title-main {
     font-size: 40px;
   }
 
@@ -89,18 +100,18 @@ p {
     font-size: 20px;
   }
 
-  img {
+  .categorie-image {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  p {
+  .title-categorie {
     font-size: 20px;
   }
 
-  .categorie-title::after {
+  .categorie-title-main::after {
     content: '';
     display: block;
     width: 50px;
@@ -113,7 +124,7 @@ p {
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-  .categorie-title {
+  .categorie-title-main {
     font-size: 50px;
   }
 
@@ -121,18 +132,18 @@ p {
     font-size: 30px;
   }
 
-  img {
+  .categorie-image {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  p {
+  .title-categorie {
     font-size: 20px;
   }
 
-  .categorie-title::after {
+  .categorie-title-main::after {
     content: '';
     display: block;
     width: 50px;
@@ -145,7 +156,7 @@ p {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  p {
+  .title-categorie {
     font-size: 25px;
   }
 
