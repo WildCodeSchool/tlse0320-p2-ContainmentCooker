@@ -21,7 +21,7 @@ const ContactForm = props => {
       </FormGroup>
       <FormGroup check>
         <Label check>
-          <Input type="radio" name="radio1" />I want to the get the monthly newsletter
+          <Input type="radio" name="radio1" /> I want to the get the monthly newsletter
         </Label>
       </FormGroup>
       <Button>Submit</Button>

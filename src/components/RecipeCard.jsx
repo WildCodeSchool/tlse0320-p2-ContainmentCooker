@@ -65,7 +65,7 @@ function RecipeCard({ meals }) {
 }
 
 RecipeCard.propTypes = {
-  meals: PropTypes.string.isRequired
+  meals: PropTypes.arrayOf(PropTypes.any).isRequired
 };
 
 export default RecipeCard;
