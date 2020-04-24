@@ -1,5 +1,6 @@
 import React from 'react';
 import './Css/Banner.css';
+import { Link } from 'react-router-dom';
 import Grill from './grill.png';
 import Ham from './ham.png';
 import Ribs from './ribs.png';
@@ -9,10 +10,12 @@ function Banner() {
     <div className="Bann">
       <div className="BannerUp">
         <div className="TitleButton">
-          <h1 className="TitleRecipe"> Grilled Meat Skewers </h1>
-          <button type="button" className="ButtonBanner">
-            See the recipe
-          </button>
+          <Link to="/randompage" className="TitleRecipe">
+            Do not have any idea ?
+          </Link>
+          <Link to="/randompage" type="button" className="ButtonBanner">
+            See a recipe
+          </Link>
         </div>
         <div className="LogosBanner">
           <img src={Grill} className="GrillLogo" alt="" />
