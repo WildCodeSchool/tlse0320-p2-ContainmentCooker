@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background-image: url('http://www.highgradelab.com/sage/steak-house/wp-content/uploads/sites/6/2015/09/dark-pattern.png?id=33');
+}
+
 .App-logo {
   height: 40vmin;
 }
