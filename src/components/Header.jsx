@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Header.css';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavbarText } from 'reactstrap';
 
-const Header = props => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
