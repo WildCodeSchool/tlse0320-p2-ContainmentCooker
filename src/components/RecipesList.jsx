@@ -1,6 +1,5 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
-import PropTypes from 'prop-types';
 import {
   Card,
   CardImg,
@@ -10,38 +9,51 @@ import {
   Container,
   CardTitle,
   Button,
-  UncontrolledTooltip
+  UncontrolledTooltip,
+  Spinner
 } from 'reactstrap';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
+import ResearchBar from './SearchBar';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 import './Css/RecipesList.css';
 
 class RecipesList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      meals: []
+      meals: [],
+      strIngredient: ''
     };
   }
 
-  componentDidMount() {
-    const {
-      match: {
-        params: { strCategorie }
-      }
-    } = this.props;
-    this.loadCategorieList(strCategorie);
-  }
-
   componentDidUpdate(prevProps) {
+    const linkFrom = window.location.pathname;
     const {
       match: {
         params: { strCategorie }
       }
     } = this.props;
     const prevCategorieId = prevProps.match.params.strCategorie;
-    if (prevCategorieId !== strCategorie) {
+    if (linkFrom.indexOf('list-categories') !== -1 && prevCategorieId !== prevProps) {
       this.loadCategorieList(strCategorie);
+    } else {
+      const strIngredient = this.props.match.params.strIngredient;
+      console.log(strIngredient);
+      this.loadIngredientRecipesList(strIngredient);
+    }
+  }
+
+  componentDidMount() {
+    const linkFrom = window.location.pathname;
+    if (linkFrom.indexOf('list-categories') !== -1) {
+      const strCategorie = this.props.match.params.strCategorie;
+      console.log(strCategorie);
+      this.loadCategorieList(strCategorie);
+    } else {
+      const strIngredient = this.props.match.params.strIngredient;
+      console.log(strIngredient);
+      this.loadIngredientRecipesList(strIngredient);
     }
   }
 
@@ -56,35 +68,72 @@ class RecipesList extends React.Component {
       });
   }
 
+  loadIngredientRecipesList(strIngredient) {
+    axios
+      .get(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${strIngredient}`)
+      .then(response => response.data)
+      .then(data => {
+        this.setState({
+          meals: data.meals,
+          strIngredient
+        });
+      });
+  }
+
   render() {
-    const { meals } = this.state;
+    const meals = this.state.meals;
+    console.log(meals);
     return (
-      <Container fluid>
+      <Container className="main-container" fluid={true}>
+        <ResearchBar />
         <div className="recipes-list-container">
           <Row xs="1" sm="2" md="3" xl="4">
-            {meals.map(meal => (
-              <Col className="container-card-recipe">
-                <Card>
-                  <CardImg top src={meal.strMealThumb} alt={meal.strMeal} className="card-image" />
-                  <div className="card-heart">
-                    <FontAwesome
-                      onClick={this.remove}
-                      className="recipe-not-love"
-                      name="heart"
-                      size="2x"
-                      id="UncontrolledTooltip"
+            {meals !== null ? (
+              meals.map(meal => (
+                <Col className="container-card-recipe">
+                  <Card className="card-recipe">
+                    <CardImg
+                      top
+                      src={meal.strMealThumb}
+                      alt={meal.strMeal}
+                      className="card-image"
                     />
-                  </div>
-                  <UncontrolledTooltip placement="bottom" target="UncontrolledTooltip">
-                    Add to favorites
-                  </UncontrolledTooltip>
-                  <CardBody>
-                    <CardTitle className="card-title">{meal.strMeal}</CardTitle>
-                    <Button>See more</Button>
-                  </CardBody>
-                </Card>
-              </Col>
-            ))}
+                    <div className="card-heart">
+                      <FontAwesome
+                        onClick={this.remove}
+                        className="recipe-not-love"
+                        name="heart"
+                        size="2x"
+                        id="UncontrolledTooltip"
+                      />
+                    </div>
+                    <UncontrolledTooltip placement="bottom" target="UncontrolledTooltip">
+                      Add to favorites
+                    </UncontrolledTooltip>
+                    <CardBody>
+                      <CardTitle className="card-title">{meal.strMeal}</CardTitle>
+                      <Button>See more</Button>
+                    </CardBody>
+                  </Card>
+                </Col>
+              ))
+            ) : (
+              <div className="ingredient-error-message">
+                <div>
+                  <Spinner style={{ width: '3rem', height: '3rem', color: 'white' }} />
+                </div>
+                <div className="text-ingredient-error-message">
+                  <p>Oops ...</p>
+                  <p>
+                    Sorry we don't have recipes for : <strong>{this.state.strIngredient}</strong>
+                  </p>
+                  <p>Do a new search or return to</p>
+                  <Link to={{ pathname: `/` }} className="button-error-message">
+                    HOME PAGE >>>
+                  </Link>
+                </div>
+              </div>
+            )}
           </Row>
         </div>
       </Container>
