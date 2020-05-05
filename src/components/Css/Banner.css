@@ -16,6 +16,7 @@
   background-repeat: no-repeat;
   height: auto;
   width: 90%;
+  height: 700px;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -37,7 +38,7 @@
 .TitleRecipe {
   font-family: 'Dancing Script', sans serif;
   font-weight: bold;
-  font-size: 75px;
+  font-size: 90px;
   color: whitesmoke;
   font-weight: bold;
   display: flex;
