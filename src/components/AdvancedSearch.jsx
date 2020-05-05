@@ -6,19 +6,11 @@ class AdvancedSearch extends React.Component {
     super(props);
     this.state = {
       listArea: [],
-      areaInput: '',
       listCategory: [],
-      categoryInput: '',
       inputValue: []
     };
-    this.handleChange = this.handleChange.bind(this);
   }
-  handleChange(event) {
-    this.setState({
-      areaInput: event.target.value1,
-      categoryInput: event.target.value2
-    });
-  }
+
   componentDidMount() {
     this.loadAreas();
     this.loadCategories();
@@ -46,13 +38,14 @@ class AdvancedSearch extends React.Component {
   }
 
   render() {
+    const { country, handleCountry, category, handleCategory } = this.props;
     return (
       <div className="input-advanced">
         <input
           type="text"
           placeholder="Area"
-          value={this.state.areaInput}
-          onChange={this.handleChange}
+          value={country}
+          onChange={e => handleCountry(e.target.value)}
           list="data-area"
         ></input>
         <datalist id="data-area">
@@ -63,8 +56,8 @@ class AdvancedSearch extends React.Component {
         <input
           type="text"
           placeholder="Category"
-          value={this.state.categoryInput}
-          onChange={this.handleChange}
+          value={category}
+          onChange={e => handleCategory(e.target.value)}
           list="data-category"
         ></input>
         <datalist id="data-category">
