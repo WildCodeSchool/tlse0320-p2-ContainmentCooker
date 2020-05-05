@@ -6,18 +6,17 @@ import IngredientsList from './IngredientsList';
 function RecipeCard({ meals }) {
   return (
     <div className="RecipeCard">
-      <h2> The Containment random Recipe</h2>
       {meals.map(meal => (
-        <Card>
-          <CardBody>
-            <CardTitle> {meal.strMeal} </CardTitle>
+        <Card className="card">
+          <CardBody className="card">
+            <CardTitle className="titleCard">{meal.strMeal}</CardTitle>
             <CardSubtitle>
               {' '}
               {meal.strCategory} / {meal.strArea}{' '}
             </CardSubtitle>
           </CardBody>
           <img className="ImgRecipe" src={meal.strMealThumb} alt={meal.strCategory} />
-          <IngredientsList meal={meal} />
+          <IngredientsList bsclass="card" meal={meal} />
           <CardBody>
             <CardText>{meal.strInstructions}</CardText>
           </CardBody>

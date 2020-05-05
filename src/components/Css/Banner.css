@@ -15,7 +15,7 @@
   background-image: url('BannerImg.png');
   background-repeat: no-repeat;
   height: auto;
-  width: 70%;
+  width: 90%;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -58,7 +58,7 @@
   border: none;
   outline: none;
   display: inherit;
-  margin-left: 35%;
+  margin-left: 45%;
   width: 100px;
   padding: 10px 20px;
   border-radius: 50px;
@@ -87,24 +87,20 @@
   z-index: 1;
   display: inherit;
   flex-direction: row;
-  width: 120px;
-  height: 120px;
+  width: 20%;
+  height: 220px;
   padding: 5%;
   padding-left: 5%;
   justify-content: space-between;
 }
 
-.HamLogo {
-  padding-left: 100%;
-}
-
-.RibsLogo {
+.BannLogo {
   padding-left: 100%;
 }
 
 .BannerBottom {
   background-size: 90% 50px;
-  width: 70%;
+  width: 90%;
   margin: auto;
   color: white;
   display: inherit;
@@ -129,6 +125,9 @@
 }
 
 @media (max-width: 1024px) {
+  .Bann {
+    display: none;
+  }
   .BannerUp {
     height: 530px;
   }

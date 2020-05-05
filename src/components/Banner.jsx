@@ -18,9 +18,9 @@ function Banner() {
           </Link>
         </div>
         <div className="LogosBanner">
-          <img src={Grill} className="GrillLogo" alt="" />
-          <img src={Ham} className="HamLogo" alt="" />
-          <img src={Ribs} className="RibsLogo" alt="" />
+          <img src={Grill} className="BannLogo" alt="" />
+          <img src={Ham} className="BannLogo" alt="" />
+          <img src={Ribs} className="BannLogo" alt="" />
         </div>
       </div>
       <div className="BannerBottom">
