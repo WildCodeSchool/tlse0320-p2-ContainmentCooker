@@ -3,17 +3,19 @@
 .App {
   background-image: url 'https://image.freepik.com/photos-gratuite/fond-ardoise_23-2148349439.jpg';
 }
+
 .Bann {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .BannerUp {
-  padding-top: 100px;
+  padding-top: 4%;
   background-image: url('BannerImg.png');
   background-repeat: no-repeat;
-  height: 600px;
-  width: 100%;
+  height: auto;
+  width: 70%;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -102,12 +104,12 @@
 
 .BannerBottom {
   background-size: 90% 50px;
-  height: 50x;
-  width: 100%;
+  width: 70%;
   margin: auto;
   color: white;
   display: inherit;
-  padding-bottom: 100px;
+  padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .TitleBanner {

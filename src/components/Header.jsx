@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavbarText } from 'reactstrap';
+import FontAwesome from 'react-fontawesome';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar className="Navbar" dark expand="md">
+      <Navbar className="Navbar-container" dark expand="md">
         <NavbarBrand href="/">
           <img
             src="https://iili.io/JzNRz7.png"
@@ -20,7 +21,9 @@ const Header = () => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <NavbarText>Profil</NavbarText>
+          <NavbarText className="profile-image">
+            <FontAwesome name="user-circle" size="4x" className="profile-icone" />
+          </NavbarText>
         </Collapse>
       </Navbar>
     </div>
