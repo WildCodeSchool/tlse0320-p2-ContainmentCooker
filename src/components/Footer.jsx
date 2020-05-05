@@ -8,7 +8,7 @@ import Tweeter from './tweet.png';
 
 function Footer() {
   return (
-    <div>
+    <div className="Footer">
       <div>
         <ul className="footer1">
           <li>Newsletter</li>

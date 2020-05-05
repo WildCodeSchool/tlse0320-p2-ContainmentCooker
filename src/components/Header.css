@@ -1,13 +1,19 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
-.navbar {
-  position: fixed;
-  height: 200px;
-  width: 100%;
-  margin: auto;
-  display: flex;
+.Navbar-container {
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.fixed-top {
-  position: relative;
+.profile-image {
+  display: flex;
+  align-items: flex-end;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-icone {
+  color: white;
 }
