@@ -19,6 +19,14 @@ function App() {
           <Route path="/list-recipes/:strIngredient" component={ListPage} />
         </Switch>
       </BrowserRouter>
+      <div>
+        <h2>Advanced Search</h2>
+        <AdvancedSearch />
+      </div>
+      <div>
+        <h2>In My Fridge</h2>
+        <InMyFridge />
+      </div>
     </div>
   );
 }
