@@ -34,7 +34,7 @@ function App() {
   }, [category]);
 
   useEffect(() => {
-    const results = _.intersectionBy(recipesByCountry, recipesByCategory, 'id');
+    const results = _.intersectionWith(recipesByCountry, recipesByCategory, _.isEqual);
     setRecipesResults(results);
   }, [recipesByCategory, recipesByCountry]);
 

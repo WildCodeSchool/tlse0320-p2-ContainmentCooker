@@ -11,6 +11,7 @@ export default function ListPage() {
   return (
     <div className="listPage">
       <Header />
+      <AdvancedSearch />
       <RecipesList />
       <Footer />
     </div>
