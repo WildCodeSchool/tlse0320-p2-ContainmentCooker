@@ -48,7 +48,7 @@ function App() {
           <Route path="/list-categories/:strCategorie" component={ListPage} />
           <Route path="/list-recipes/:strIngredient" component={ListPage} />
           <Route
-            path="/search"
+            path="/all-recipes"
             component={() => (
               <AdvancedSearch
                 handleCountry={handleCountry}
