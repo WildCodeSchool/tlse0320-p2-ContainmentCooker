@@ -84,19 +84,16 @@
 }
 
 .LogosBanner {
-  position: relative;
-  z-index: 1;
   display: inherit;
-  flex-direction: row;
-  width: 20%;
-  height: 220px;
-  padding: 5%;
-  padding-left: 5%;
+  width: 70%;
+  padding-top: 10%;
+  margin: auto;
   justify-content: space-between;
 }
 
 .BannLogo {
-  padding-left: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .BannerBottom {
