@@ -20,10 +20,10 @@ function RecipeCard({ meals }) {
           <IngredientsList bsclass="card" meal={meal} />
           <CardBody>
             <CardText>{meal.strInstructions}</CardText>
+            <div className="VideoRecipe">
+              <ReactPlayer className="VideoRecipe" url={meal.strYoutube} />
+            </div>
           </CardBody>
-          <div>
-            <ReactPlayer className="VideoRecipe" url={meal.strYoutube} />
-          </div>
         </Card>
       ))}
     </div>

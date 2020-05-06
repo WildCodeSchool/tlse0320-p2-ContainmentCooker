@@ -46,6 +46,14 @@
   background: url('https://image.freepik.com/photos-gratuite/fond-ardoise_23-2148349439.jpg');
 }
 
+.SearchTitle {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: white;
+  font-family: Source Sans Pro, sans-serif;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #bar {
     font-size: 10px;
