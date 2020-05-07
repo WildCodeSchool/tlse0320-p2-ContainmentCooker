@@ -33,7 +33,13 @@ class RandomRecipe extends React.Component {
     return (
       <div className="RandomRecipe">
         {this.state.meals && <RecipeCard meals={this.state.meals} />}
-        <Button type="button" color="secondary" size="lg" onClick={this.getRecipe}>
+        <Button
+          className="ButtonRecipe"
+          type="button"
+          color="secondary"
+          size="lg"
+          onClick={this.getRecipe}
+        >
           Random recipe
         </Button>
       </div>

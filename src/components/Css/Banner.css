@@ -15,7 +15,8 @@
   background-image: url('BannerImg.png');
   background-repeat: no-repeat;
   height: auto;
-  width: 70%;
+  width: 90%;
+  height: 700px;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -37,7 +38,7 @@
 .TitleRecipe {
   font-family: 'Dancing Script', sans serif;
   font-weight: bold;
-  font-size: 75px;
+  font-size: 95px;
   color: whitesmoke;
   font-weight: bold;
   display: flex;
@@ -54,12 +55,12 @@
 
 .ButtonBanner {
   font-family: 'Dancing Script', sans serif;
-  font-size: 20px;
+  font-size: 30px;
   border: none;
   outline: none;
   display: inherit;
-  margin-left: 35%;
-  width: 100px;
+  margin-left: 45%;
+  width: 120px;
   padding: 10px 20px;
   border-radius: 50px;
   color: white;
@@ -83,28 +84,21 @@
 }
 
 .LogosBanner {
-  position: relative;
-  z-index: 1;
   display: inherit;
-  flex-direction: row;
-  width: 120px;
-  height: 120px;
-  padding: 5%;
-  padding-left: 5%;
+  width: 70%;
+  padding-top: 5%;
+  margin: auto;
   justify-content: space-between;
 }
 
-.HamLogo {
-  padding-left: 100%;
-}
-
-.RibsLogo {
-  padding-left: 100%;
+.BannLogo {
+  width: 150px;
+  height: 150px;
 }
 
 .BannerBottom {
   background-size: 90% 50px;
-  width: 70%;
+  width: 90%;
   margin: auto;
   color: white;
   display: inherit;
@@ -129,6 +123,9 @@
 }
 
 @media (max-width: 1024px) {
+  .Bann {
+    display: none;
+  }
   .BannerUp {
     height: 530px;
   }

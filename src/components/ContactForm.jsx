@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import './Css/ContactForm.css';
 
 const ContactForm = props => {
   return (
-    <Form>
+    <Form className="Form">
       <FormGroup>
         <Label for="exampleEmail">Email</Label>
         <Input type="email" name="email" id="exampleEmail" placeholder="email" />
@@ -16,7 +17,7 @@ const ContactForm = props => {
         </FormText>
       </FormGroup>
       <FormGroup>
-        <Label for="exampleFile">File</Label>
+        <Label for="exampleFile"></Label>
         <Input type="file" name="file" id="exampleFile" />
       </FormGroup>
       <FormGroup check>
