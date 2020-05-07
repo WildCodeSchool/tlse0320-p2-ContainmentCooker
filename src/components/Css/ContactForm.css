@@ -1,0 +1,12 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+.Form {
+  width: 90%;
+  padding: 10%;
+  margin: auto;
+  color: white;
+  background: rgba(0, 0, 0, 0.5) !important;
+  font-family: 'Dancing Script', sans serif;
+  font-weight: bold;
+  font-size: 25px;
+}

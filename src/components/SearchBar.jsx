@@ -42,6 +42,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
+        <h2 className="SearchTitle"> Give me one ingredient, I give you 5 recipes !</h2>
         <div id="searcharea">
           <input
             list="data"
