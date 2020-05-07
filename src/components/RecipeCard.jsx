@@ -8,23 +8,23 @@ function RecipeCard({ meals }) {
   return (
     <div className="RecipeCard">
       {meals.map(meal => (
-        <Card className="card">
-          <CardBody className="card">
-            <CardTitle className="titleCard">{meal.strMeal}</CardTitle>
-            <CardSubtitle>
+        <div className="cardRecipe">
+          <div className="cardRecipe">
+            <div className="titleCard">{meal.strMeal}</div>
+            <div>
               {' '}
               {meal.strCategory} / {meal.strArea}{' '}
-            </CardSubtitle>
-          </CardBody>
+            </div>
+          </div>
           <img className="ImgRecipe" src={meal.strMealThumb} alt={meal.strCategory} />
-          <IngredientsList bsclass="card" meal={meal} />
-          <CardBody>
-            <CardText>{meal.strInstructions}</CardText>
+          <div bsclass="card" meal={meal} />
+          <div>
+            <div>{meal.strInstructions}</div>
             <div className="VideoRecipe">
               <ReactPlayer className="VideoRecipe" url={meal.strYoutube} />
             </div>
-          </CardBody>
-        </Card>
+          </div>
+        </div>
       ))}
     </div>
   );
