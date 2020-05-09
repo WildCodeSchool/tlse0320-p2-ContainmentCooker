@@ -6,6 +6,7 @@ import ListPage from './components/ListPage';
 import RandomPage from './components/RandomPage';
 import ContactPage from './components/ContactPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RecipePage from './components/RecipePage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contact" component={ContactPage} />
           <Route path="/list-categories/:strCategorie" component={ListPage} />
           <Route path="/list-recipes/:strIngredient" component={ListPage} />
+          <Route path="/recipe-page/:idMeal" component={RecipePage} />
         </Switch>
       </BrowserRouter>
     </div>
