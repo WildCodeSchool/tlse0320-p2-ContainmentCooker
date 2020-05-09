@@ -7,10 +7,10 @@ import Home from './components/Home';
 import ListPage from './components/ListPage';
 import RandomPage from './components/RandomPage';
 import ContactPage from './components/ContactPage';
-import AdvancedSearch from './components/AdvancedSearch';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AdvancedSearchPage from './components/AdvancedSearchPage';
 
 function App() {
   // const [country, handleCountry] = useState('');
@@ -51,6 +51,7 @@ function App() {
             // component={props => ( <ListPage {...props} country={country} handleCountry={handleCountry} />)}
           />
           <Route path="/list-recipes/:strIngredient" component={ListPage} />
+          <Route path="/advanced-search-page" component={AdvancedSearchPage} />
           {/* <Route
             path="/all-recipes"
             component={() => (
