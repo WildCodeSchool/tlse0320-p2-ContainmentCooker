@@ -1,0 +1,45 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+.advanced-search-title {
+  font-size: 40px;
+  color: white;
+  font-family: Source Sans Pro, sans-serif;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 3%;
+}
+
+.advanced-search-button-choice {
+  margin-bottom: 3%;
+}
+
+.advanced-search-button-country-category,
+.advanced-search-button-fridge {
+  background-color: white;
+  font-family: Source Sans Pro, sans-serif;
+  color: black;
+  border: black;
+}
+
+.advanced-search-button-fridge {
+  margin-left: 1px !important;
+}
+
+.advanced-search-button-country-category:hover,
+.advanced-search-button-fridge:hover {
+  background-color: grey !important;
+}
+
+.advanced-search-button-country-category.active,
+.advanced-search-button-fridge.active {
+  background-color: grey !important;
+  box-shadow: 0 0 0 0.2rem grey(38, 143, 255, 0.5) !important;
+  border-color: grey !important;
+}
+
+.advanced-search-button-country-category.active:focus,
+.advanced-search-button-fridge.active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(228, 232, 236, 0.5);
+}
