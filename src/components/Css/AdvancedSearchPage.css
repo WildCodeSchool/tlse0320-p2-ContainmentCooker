@@ -1,14 +1,16 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
 .advanced-search-title {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   font-family: Source Sans Pro, sans-serif;
   text-shadow: 2px 2px 2px black;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  padding: 3%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 0;
 }
 
 .advanced-search-button-choice {
@@ -41,5 +43,5 @@
 
 .advanced-search-button-country-category.active:focus,
 .advanced-search-button-fridge.active:focus {
-  box-shadow: 0 0 0 0.2rem rgba(228, 232, 236, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(228, 232, 236, 0.5) !important;
 }
