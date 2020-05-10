@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import RecipesList from './RecipesList';
 import './Css/AdvancedSearch.css';
 
 class AdvancedSearch extends React.Component {
