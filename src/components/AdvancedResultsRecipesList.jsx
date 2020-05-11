@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Css/RecipesList.css';
-import { Row, Container, Spinner } from 'reactstrap';
+import { Row, Container } from 'reactstrap';
 import CardDetail from './CardDetail';
-import { Link } from 'react-router-dom';
 
 function select(
   country,

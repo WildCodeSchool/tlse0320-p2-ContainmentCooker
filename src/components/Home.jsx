@@ -4,9 +4,7 @@ import CategoriesList from './CategoriesList';
 import SearchBar from './SearchBar';
 import Header from './Header';
 import Footer from './Footer';
-
 import './Home.css';
-import AdvancedSearch from './AdvancedSearch';
 
 function Home() {
   return (
