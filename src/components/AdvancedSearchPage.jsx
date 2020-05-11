@@ -24,6 +24,7 @@ export default function AdvancedSearchPage() {
   const [recipesIngredient3, setRecipesIngredient3] = useState([]);
   const [recipesResultsInput1andInput2, setRecipesResultsInput1andInput2] = useState([]);
   const [recipesIngredientResults, setrecipesIngredientResults] = useState([]);
+  const [rSelected, setRSelected] = useState(null);
 
   useEffect(() => {
     axios
@@ -99,12 +100,10 @@ export default function AdvancedSearchPage() {
     setRecipesResultsInput1andInput2(results);
   }, [recipesIngredient1, recipesIngredient2]);
 
-  const [rSelected, setRSelected] = useState(null);
-
   return (
     <div>
       <Header />
-
+      <h2>Make your research choice</h2>
       <ButtonGroup>
         <Button color="primary" onClick={() => setRSelected(1)} active={rSelected === 1}>
           Search by country and categorie
@@ -113,9 +112,7 @@ export default function AdvancedSearchPage() {
           Search by ingredients
         </Button>
       </ButtonGroup>
-      {rSelected !== 1 && rSelected !== 2 ? (
-        <h2>Make your research choice</h2>
-      ) : rSelected === 1 ? (
+      {rSelected === 1 ? (
         <AdvancedSearch
           handleCountry={handleCountry}
           country={country}
