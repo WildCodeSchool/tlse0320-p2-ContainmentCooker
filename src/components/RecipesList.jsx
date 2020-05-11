@@ -112,7 +112,12 @@ class RecipesList extends React.Component {
                     </UncontrolledTooltip>
                     <CardBody>
                       <CardTitle className="card-title">{meal.strMeal}</CardTitle>
-                      <Link to="/recipe-page/:idMeal" type="button" className="ButtonDisplay">
+                      <Link
+                        id={meal.idMeal}
+                        to={{ pathname: `/recipe-page/${meal.idMeal}` }}
+                        type="button"
+                        className="ButtonDisplay"
+                      >
                         See a recipe
                       </Link>
                     </CardBody>

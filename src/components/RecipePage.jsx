@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 import './Home.css';
-import RecipeClick from './RandomRecipe';
+import RecipeClick from './RecipeClick';
 import Header from './Header';
 
 function RecipePage() {
