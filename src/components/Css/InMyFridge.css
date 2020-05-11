@@ -1,0 +1,16 @@
+.container-inputs-fridge {
+  margin-bottom: 3%;
+}
+
+.input-fridge {
+  width: 20%;
+  line-height: 25px;
+  padding: 10px 10px 10px 10px;
+  border: solid 2px black;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  margin: 5px 4px 10px;
+  border-radius: 20px;
+}

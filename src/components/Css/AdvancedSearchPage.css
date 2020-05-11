@@ -14,12 +14,13 @@
 }
 
 .advanced-search-button-choice {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 .advanced-search-button-country-category,
 .advanced-search-button-fridge {
-  background-color: white;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  border-radius: 180px;
   font-family: Source Sans Pro, sans-serif;
   color: black;
   border: black;
@@ -31,17 +32,17 @@
 
 .advanced-search-button-country-category:hover,
 .advanced-search-button-fridge:hover {
-  background-color: grey !important;
+  background: black !important;
 }
 
 .advanced-search-button-country-category.active,
 .advanced-search-button-fridge.active {
-  background-color: grey !important;
+  background: black !important;
   box-shadow: 0 0 0 0.2rem grey(38, 143, 255, 0.5) !important;
-  border-color: grey !important;
+  border-color: b !important;
 }
 
 .advanced-search-button-country-category.active:focus,
 .advanced-search-button-fridge.active:focus {
-  box-shadow: 0 0 0 0.2rem rgba(228, 232, 236, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
 }
