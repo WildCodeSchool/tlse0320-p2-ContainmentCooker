@@ -53,20 +53,28 @@ class InMyFridge extends React.Component {
             onChange={e => handleIngredient1(e.target.value)}
             list="data"
           />
-          <input
-            type="text"
-            placeholder="Ingredient 2"
-            value={ingredient2}
-            onChange={e => handleIngredient2(e.target.value)}
-            list="data"
-          />
-          <input
-            type="text"
-            placeholder="Ingredient 3"
-            value={ingredient3}
-            onChange={e => handleIngredient3(e.target.value)}
-            list="data"
-          />
+          {ingredient1 ? (
+            <input
+              type="text"
+              placeholder="Ingredient 2"
+              value={ingredient2}
+              onChange={e => handleIngredient2(e.target.value)}
+              list="data"
+            />
+          ) : (
+            <></>
+          )}
+          {ingredient1 && ingredient2 ? (
+            <input
+              type="text"
+              placeholder="Ingredient 3"
+              value={ingredient3}
+              onChange={e => handleIngredient3(e.target.value)}
+              list="data"
+            />
+          ) : (
+            <></>
+          )}
           <datalist id="data">
             {this.state.listIngredients.map((item, key) => (
               <option key={key} value={item.strIngredient} />

@@ -96,7 +96,7 @@ export default function AdvancedResultsRecipesList({
               recipesIngredient2 &&
               ingredient3 &&
               recipesIngredient3 &&
-              recipesResults.lenght === 0 ? (
+              (recipesIngredientResults.length === 0 || recipesIngredientResults === null) ? (
               <div>
                 No results for : {ingredient1}, {ingredient2}, {ingredient3}.
               </div>
