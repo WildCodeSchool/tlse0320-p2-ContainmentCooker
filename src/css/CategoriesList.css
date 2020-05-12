@@ -1,0 +1,29 @@
+.categoriesList {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .categoriesList {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .categoriesList {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .categoriesList {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

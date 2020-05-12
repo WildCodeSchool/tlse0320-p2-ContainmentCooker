@@ -1,0 +1,46 @@
+.Footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.FooterMiddle {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.FooterBottom {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+.socialNet {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.LogosFooter {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: auto;
+}
+
+.LogosSocial {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  margin: auto;
+}
+
+#FooterButton {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  display: inherit;
+}

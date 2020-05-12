@@ -1,0 +1,57 @@
+.recipes-list-container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-title {
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recipe-not-love {
+  color: white;
+  margin-right: 1%;
+}
+
+.container-card-recipe {
+  padding-bottom: 2%;
+}
+
+.card-heart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.recipe-not-love:hover {
+  cursor: pointer;
+}
+
+.ingredient-error-message {
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.text-ingredient-error-message {
+  margin-top: 10%;
+  color: white;
+  font-size: x-large;
+  margin-bottom: 20%;
+}
+
+.button-error-message {
+  font-size: x-large;
+  color: white;
+  cursor: pointer;
+}
