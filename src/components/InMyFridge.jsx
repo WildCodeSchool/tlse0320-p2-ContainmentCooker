@@ -5,27 +5,27 @@ class InMyFridge extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      listIngredients: [],
-      ingredientsValue1: '',
-      ingredientsValue2: '',
-      ingredientsValue3: ''
+      listIngredients: []
+      // ingredientsValue1: '',
+      // ingredientsValue2: '',
+      // ingredientsValue3: ''
     };
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
   }
-  handleChange(event) {
-    this.setState({
-      ingredientsValue1: event.target.value1,
-      ingredientsValue2: event.target.value2,
-      ingredientsValue3: event.target.value3
-    });
-  }
+  // handleChange(event) {
+  //   this.setState({
+  //     ingredientsValue1: event.target.value1,
+  //     ingredientsValue2: event.target.value2,
+  //     ingredientsValue3: event.target.value3
+  //   });
+  // }
   componentDidMount() {
     const listOfIngredients = this.loadIngredients();
     console.log(listOfIngredients);
   }
   loadIngredients() {
     axios
-      .get(`https://www.themealdb.com/api/json/v1/1/list.php?i=list`)
+      .get(`https://www.themealdb.com/api/json/v1/1/list.php?i=`)
       .then(response => response.data)
       .then(data => {
         this.setState({
@@ -35,36 +35,52 @@ class InMyFridge extends React.Component {
   }
 
   render() {
+    const {
+      ingredient1,
+      ingredient2,
+      ingredient3,
+      handleIngredient1,
+      handleIngredient2,
+      handleIngredient3
+    } = this.props;
     return (
       <div className="input-ingredient">
-        <div>
+        <form>
           <input
             type="text"
             placeholder="Ingredient 1"
-            value={this.state.ingredientsValue1}
-            onChange={this.handleChange}
+            value={ingredient1}
+            onChange={e => handleIngredient1(e.target.value)}
             list="data"
           />
-          <input
-            type="text"
-            placeholder="Ingredient 2"
-            value={this.state.ingredientsValue2}
-            onChange={this.handleChange}
-            list="data"
-          />
-          <input
-            type="text"
-            placeholder="Ingredient 3"
-            value={this.state.ingredientsValue3}
-            onChange={this.handleChange}
-            list="data"
-          />
-        </div>
-        <datalist id="data">
-          {this.state.listIngredients.map((item, key) => (
-            <option key={key} value={item.strIngredient} />
-          ))}
-        </datalist>
+          {ingredient1 ? (
+            <input
+              type="text"
+              placeholder="Ingredient 2"
+              value={ingredient2}
+              onChange={e => handleIngredient2(e.target.value)}
+              list="data"
+            />
+          ) : (
+            <></>
+          )}
+          {ingredient1 && ingredient2 ? (
+            <input
+              type="text"
+              placeholder="Ingredient 3"
+              value={ingredient3}
+              onChange={e => handleIngredient3(e.target.value)}
+              list="data"
+            />
+          ) : (
+            <></>
+          )}
+          <datalist id="data">
+            {this.state.listIngredients.map((item, key) => (
+              <option key={key} value={item.strIngredient} />
+            ))}
+          </datalist>
+        </form>
       </div>
     );
   }
