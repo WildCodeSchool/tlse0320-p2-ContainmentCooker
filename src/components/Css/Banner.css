@@ -99,7 +99,9 @@
 .BannerBottom {
   background-size: 90% 50px;
   width: 90%;
-  margin: auto;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
   color: white;
   display: inherit;
   padding-bottom: 5%;
@@ -107,7 +109,6 @@
 }
 
 .TitleBanner {
-  margin: auto;
   color: white;
   font-family: 'Dancing Script', sans serif;
   font-size: 50px;
@@ -120,6 +121,11 @@
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.title-recipes,
+.title-contact {
+  margin: auto;
 }
 
 @media (max-width: 1024px) {
