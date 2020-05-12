@@ -56,7 +56,7 @@ class AdvancedSearch extends React.Component {
             ))}
           </select>
         </label>
-        <label>
+        <label htmlFor="fridge-select">
           <select
             type="text"
             placeholder="Category"

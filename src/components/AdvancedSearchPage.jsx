@@ -113,7 +113,7 @@ export default function AdvancedSearchPage() {
           onClick={() => setRSelected(1)}
           active={rSelected === 1}
         >
-          Search by country and categorie
+          Filter by country/category
         </Button>
         <Button
           className="advanced-search-button-fridge"
@@ -121,7 +121,7 @@ export default function AdvancedSearchPage() {
           onClick={() => setRSelected(2)}
           active={rSelected === 2}
         >
-          Search by ingredients
+          Filter by ingredients
         </Button>
       </ButtonGroup>
       {rSelected === 1 ? (
