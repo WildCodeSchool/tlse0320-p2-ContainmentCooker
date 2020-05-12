@@ -13,7 +13,6 @@ import {
   Spinner
 } from 'reactstrap';
 import { withRouter, Link } from 'react-router-dom';
-import ResearchBar from './SearchBar';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import './Css/RecipesList.css';
@@ -85,7 +84,6 @@ class RecipesList extends React.Component {
     console.log(meals);
     return (
       <Container className="main-container" fluid={true}>
-        <ResearchBar />
         <div className="recipes-list-container">
           <Row xs="1" sm="2" md="3" xl="4">
             {meals !== null ? (
