@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -43,8 +41,3 @@ function RecipeClick() {
 }
 
 export default RecipeClick;
-
-/* 
-Je me rends sur la page d'affichage RecipesList,
-je clique sur "see more" => cela récupère l'id de la recette et m'ouvre la page compléte correspondante
-*/
