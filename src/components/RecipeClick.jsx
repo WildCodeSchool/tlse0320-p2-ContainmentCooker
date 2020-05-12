@@ -8,7 +8,7 @@ import './Css/RecipeCard.css';
 
 function RecipeClick() {
   const [arrMeal, setArrMeal] = useState([]);
-  const { idMeal } = useParams;
+  const { idMeal } = useParams();
 
   useEffect(() => {
     axios
