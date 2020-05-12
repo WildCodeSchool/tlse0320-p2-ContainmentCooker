@@ -10,27 +10,24 @@ function Footer() {
   return (
     <div className="Footer">
       <div>
-        <ul className="footer1">
+        <ul className="FooterUp">
           <li>Newsletter</li>
           <li>
             <input type="email" name="email" placeholder="@" />
           </li>
         </ul>
       </div>
-      <div>
-        <Button id="UncontrolledPopover" type="button">
+      <div className="DivFooterButton">
+        <Button id="FooterButton" type="button">
           S'abonner
         </Button>
-        <UncontrolledPopover placement="bottom" target="UncontrolledPopover">
+        <UncontrolledPopover placement="bottom" target="FooterButton">
           <PopoverHeader>Abonnement réussi</PopoverHeader>
-          <PopoverBody>
-            C'est bon , vous etes bien inscrit à notre Newsletter, vous recevrez toutes les News du
-            site .
-          </PopoverBody>
+          <PopoverBody>Vous êtes bien inscrits à notre Newsletter !</PopoverBody>
         </UncontrolledPopover>
       </div>
       <div>
-        <ul className="footer2">
+        <ul className="FooterMiddle">
           <li>
             <a href="aboutus.html" title="A propos de l'équipe">
               À propos
@@ -43,19 +40,19 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="footer3">
+      <div className="FooterBottom">
         <ul className="socialNet">
-          <li>
-            <img src={Facebook} alt="Facebook" />
+          <li className="LogosFooter">
+            <img className="LogosSocial" src={Facebook} alt="Facebook" />
           </li>
-          <li>
-            <img src={Tweeter} alt="Tweeter" />
+          <li className="LogosFooter">
+            <img className="LogosSocial" src={Tweeter} alt="Tweeter" />
           </li>
-          <li>
-            <img src={Instagram} alt="Instagram" />
+          <li className="LogosFooter">
+            <img className="LogosSocial" src={Instagram} alt="Instagram" />
           </li>
-          <li>
-            <img src={Youtube} alt="Youtube" />
+          <li className="LogosFooter">
+            <img className="LogosSocial" src={Youtube} alt="Youtube" />
           </li>
         </ul>
       </div>

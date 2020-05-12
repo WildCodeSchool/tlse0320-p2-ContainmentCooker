@@ -18,13 +18,21 @@ function Banner() {
           </Link>
         </div>
         <div className="LogosBanner">
-          <img src={Grill} className="GrillLogo" alt="" />
-          <img src={Ham} className="HamLogo" alt="" />
-          <img src={Ribs} className="RibsLogo" alt="" />
+          <div>
+            <img src={Grill} className="BannLogo" alt="" />
+          </div>
+          <div>
+            <img src={Ham} className="BannLogo" alt="" />
+          </div>
+          <div>
+            <img src={Ribs} className="BannLogo" alt="" />
+          </div>
         </div>
       </div>
       <div className="BannerBottom">
-        <h2 className="TitleBanner">Recipes</h2>
+        <Link to="/advanced-search-page">
+          <h2 className="TitleBanner">Recipes</h2>
+        </Link>
         <Link to="/contact" className="TitleBanner">
           Contact
         </Link>
