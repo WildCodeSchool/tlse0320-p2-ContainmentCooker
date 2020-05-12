@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RecipesList from './RecipesList';
+import AdvancedResultsRecipesList from './AdvancedResultsRecipesList';
 import Header from './Header';
 import Footer from './Footer';
 import './Css/ListPage.css';
@@ -7,12 +7,13 @@ import axios from 'axios';
 import _ from 'lodash';
 import AdvancedSearch from './AdvancedSearch';
 
-export default function ListPage() {
+export default function AdvancedSearchPage() {
   const [country, handleCountry] = useState('');
   const [category, handleCategory] = useState('');
   const [recipesByCountry, setRecipesByCountry] = useState([]);
   const [recipesByCategory, setRecipesByCategory] = useState([]);
   const [recipesResults, setRecipesResults] = useState([]);
+  const [allRecipes, getAllRecipes] = useState([]);
 
   useEffect(() => {
     axios
@@ -33,8 +34,15 @@ export default function ListPage() {
     setRecipesResults(results);
   }, [recipesByCategory, recipesByCountry]);
 
+  useEffect(() => {
+    axios
+      .get(` https://www.themealdb.com/api/json/v1/1/filter.php?a=french`)
+      .then(res => res.data.meals)
+      .then(res => getAllRecipes(res));
+  }, [allRecipes]);
+
   return (
-    <div className="listPage">
+    <div>
       <Header />
       <AdvancedSearch
         handleCountry={handleCountry}
@@ -43,7 +51,16 @@ export default function ListPage() {
         category={category}
         recipesResults={recipesResults}
       />
-      <RecipesList />
+      <AdvancedResultsRecipesList
+        handleCountry={handleCountry}
+        country={country}
+        handleCategory={handleCategory}
+        category={category}
+        recipesResults={recipesResults}
+        recipesByCategory={recipesByCategory}
+        recipesByCountry={recipesByCountry}
+        allRecipes={allRecipes}
+      />
       <Footer />
     </div>
   );
