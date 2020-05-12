@@ -51,6 +51,9 @@
   margin: auto;
   color: white;
   font-family: Source Sans Pro, sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 30px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -73,4 +76,17 @@
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .SearchTitle {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+    font-family: Source Sans Pro, sans-serif;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 18px;
+  }
 }
