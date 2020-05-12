@@ -1,18 +1,47 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+.RandomRecipe {
+  width: 90%;
+  margin: auto;
+  font-family: 'Dancing Script', sans serif;
+  font-weight: bold;
+}
+
+.cardRecipe {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white;
+  font-size: 30px;
+}
+
+.titleCard {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+
 .CardRecipe {
   display: flex;
   flex-direction: column;
   margin: auto;
-  color: white;
   font-family: 'Dancing Script', sans serif;
 }
 
 .ImgRecipe {
   padding-top: 50px;
+  padding-bottom: 50px;
   display: inherit;
   margin: auto;
-  width: 400px;
-  height: 400px;
+  width: 40%;
+  height: 40%;
   border-radius: 20%;
+}
+
+.VideoRecipe {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .RecipeList {

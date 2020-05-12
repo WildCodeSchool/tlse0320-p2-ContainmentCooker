@@ -25,6 +25,7 @@ export default function AdvancedSearchPage() {
   const [recipesIngredient3, setRecipesIngredient3] = useState([]);
   const [recipesResultsInput1andInput2, setRecipesResultsInput1andInput2] = useState([]);
   const [recipesIngredientResults, setrecipesIngredientResults] = useState([]);
+  const [rSelected, setRSelected] = useState(null);
 
   useEffect(() => {
     axios
@@ -99,8 +100,6 @@ export default function AdvancedSearchPage() {
     const results = _.intersectionWith(recipesIngredient1, recipesIngredient2, _.isEqual);
     setRecipesResultsInput1andInput2(results);
   }, [recipesIngredient1, recipesIngredient2]);
-
-  const [rSelected, setRSelected] = useState(null);
 
   return (
     <div>

@@ -34,36 +34,43 @@ class InMyFridge extends React.Component {
       handleIngredient3
     } = this.props;
     return (
-      <div className="container-inputs-fridge">
-        <input
-          type="text"
-          placeholder="Ingredient 1"
-          value={ingredient1}
-          onChange={e => handleIngredient1(e.target.value)}
-          list="data"
-          className="input-fridge"
-        />
-        <input
-          type="text"
-          placeholder="Ingredient 2"
-          value={ingredient2}
-          onChange={e => handleIngredient2(e.target.value)}
-          list="data"
-          className="input-fridge"
-        />
-        <input
-          type="text"
-          placeholder="Ingredient 3"
-          value={ingredient3}
-          onChange={e => handleIngredient3(e.target.value)}
-          list="data"
-          className="input-fridge"
-        />
-        <datalist id="data">
-          {this.state.listIngredients.map((item, key) => (
-            <option key={key} value={item.strIngredient} />
-          ))}
-        </datalist>
+      <div className="input-ingredient">
+        <form>
+          <input
+            type="text"
+            placeholder="Ingredient 1"
+            value={ingredient1}
+            onChange={e => handleIngredient1(e.target.value)}
+            list="data"
+          />
+          {ingredient1 ? (
+            <input
+              type="text"
+              placeholder="Ingredient 2"
+              value={ingredient2}
+              onChange={e => handleIngredient2(e.target.value)}
+              list="data"
+            />
+          ) : (
+            <></>
+          )}
+          {ingredient1 && ingredient2 ? (
+            <input
+              type="text"
+              placeholder="Ingredient 3"
+              value={ingredient3}
+              onChange={e => handleIngredient3(e.target.value)}
+              list="data"
+            />
+          ) : (
+            <></>
+          )}
+          <datalist id="data">
+            {this.state.listIngredients.map((item, key) => (
+              <option key={key} value={item.strIngredient} />
+            ))}
+          </datalist>
+        </form>
       </div>
     );
   }

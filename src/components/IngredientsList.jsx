@@ -20,10 +20,10 @@ function IngredientsList({ meal }) {
   }
 
   return (
-    <div className="IngredientsList">
+    <div>
       <ListGroup>
         {ingredients.map((_, i) => (
-          <ListGroupItem className="justify-content-between">
+          <ListGroupItem className="card">
             {ingredients[i]} <Badge pill>{measures[i]}</Badge>
           </ListGroupItem>
         ))}

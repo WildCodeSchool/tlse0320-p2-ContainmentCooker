@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
 .Navbar-container {
-  width: 70%;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
 }
