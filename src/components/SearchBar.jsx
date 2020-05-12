@@ -42,7 +42,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
-        <h2 className="SearchTitle"> Give me one ingredient, I give you 5 recipes !</h2>
+        <h2 className="SearchTitle"> Give me one ingredient, I give you some recipes !</h2>
         <div className="searcharea">
           <input
             list="data"
