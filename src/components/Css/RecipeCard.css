@@ -38,6 +38,7 @@
   flex-direction: column;
   width: 65%;
   margin: auto;
+  padding-bottom: 10%;
 }
 
 .TitleInstructions {
