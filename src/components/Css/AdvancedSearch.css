@@ -1,0 +1,10 @@
+.select-by-area,
+.select-by-category {
+  cursor: pointer;
+  width: 200px;
+  color: black;
+}
+
+.area {
+  text-decoration: white;
+}

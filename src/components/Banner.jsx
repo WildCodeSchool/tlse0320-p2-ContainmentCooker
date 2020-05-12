@@ -30,7 +30,9 @@ function Banner() {
         </div>
       </div>
       <div className="BannerBottom">
-        <h2 className="TitleBanner">Recipes</h2>
+        <Link to="/advanced-search-page">
+          <h2 className="TitleBanner">Recipes</h2>
+        </Link>
         <Link to="/contact" className="TitleBanner">
           Contact
         </Link>
