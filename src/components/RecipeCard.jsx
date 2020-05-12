@@ -18,11 +18,14 @@ function RecipeCard({ meals }) {
           </div>
           <img className="ImgRecipe" src={meal.strMealThumb} alt={meal.strCategory} />
           <div bsclass="card" meal={meal} />
-          <div>
-            <div>{meal.strInstructions}</div>
-            <div className="VideoRecipe">
-              <ReactPlayer className="VideoRecipe" url={meal.strYoutube} />
-            </div>
+          <h2 className="TitleInstructions">Instructions</h2>
+          <div className="InstructionsList">
+            <div className="Instructions">{meal.strInstructions}</div>
+            <IngredientsList meal={meal} />
+          </div>
+
+          <div className="VideoRecipe">
+            <ReactPlayer className="VideoRecipe" url={meal.strYoutube} />
           </div>
         </div>
       ))}

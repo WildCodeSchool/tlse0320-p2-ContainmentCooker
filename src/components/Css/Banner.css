@@ -15,7 +15,7 @@
   background-image: url('BannerImg.png');
   background-repeat: no-repeat;
   height: auto;
-  width: 90%;
+  width: 100%;
   height: 700px;
   display: flex;
   margin: auto;
@@ -103,7 +103,6 @@
   color: white;
   display: inherit;
   padding-bottom: 5%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .TitleBanner {

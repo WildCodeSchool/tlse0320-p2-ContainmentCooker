@@ -1,0 +1,35 @@
+#hgr_top {
+  position: fixed;
+  z-index: 10000;
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+
+#hgr_bottom {
+  position: fixed;
+  z-index: 10000;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+
+#hgr_right {
+  position: fixed;
+  z-index: 10000;
+  background: white;
+  top: 0;
+  height: 15px;
+}
+
+#hgr_left {
+  position: fixed;
+  z-index: 10000;
+  background: white;
+  left: 0;
+  height: 15px;
+}

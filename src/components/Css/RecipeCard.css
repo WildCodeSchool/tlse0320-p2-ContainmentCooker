@@ -1,22 +1,57 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
 
 .RandomRecipe {
-  width: 90%;
+  width: 100%;
   margin: auto;
-  font-family: 'Dancing Script', sans serif;
-  font-weight: bold;
+  font-family: Source Sans Pro, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardRecipe {
   background: rgba(0, 0, 0, 0.5) !important;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .titleCard {
+  font-family: 'Dancing Script', sans serif;
   color: white;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-group-item {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Instructions {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: auto;
+}
+
+.TitleInstructions {
+  display: flex;
+  margin: auto;
+  width: 12%;
+  margin-bottom: 3%;
+}
+
+.InstructionsList {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .CardRecipe {
@@ -24,6 +59,7 @@
   flex-direction: column;
   margin: auto;
   font-family: 'Dancing Script', sans serif;
+  display: flex;
 }
 
 .ImgRecipe {
@@ -31,9 +67,10 @@
   padding-bottom: 50px;
   display: inherit;
   margin: auto;
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
   border-radius: 20%;
+  display: flex;
 }
 
 .VideoRecipe {
@@ -42,11 +79,54 @@
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
 }
 
 .RecipeList {
   color: white;
-  font-family: 'Dancing Script', sans serif;
   font-size: 25px;
   display: inherit;
+  display: flex;
+}
+
+.ButtonRecipe {
+  margin: auto;
+  height: 60px;
+  padding: 10px;
+  padding: 10%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  .titleCard {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-group-item {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Instructions {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .InstructionsList {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }

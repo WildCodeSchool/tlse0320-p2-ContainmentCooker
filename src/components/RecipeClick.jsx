@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import './Css/RecipeCard.css';
+import IngredientsList from './IngredientsList';
 
 function RecipeClick() {
   const [arrMeal, setArrMeal] = useState([]);
@@ -19,21 +20,22 @@ function RecipeClick() {
 
   return (
     <div className="RecipeCard">
-      {arrMeal.map(item => (
+      {arrMeal.map(meal => (
         <div className="cardRecipe">
           <div className="cardRecipe">
-            <div className="titleCard">{item.strMeal}</div>
+            <div className="titleCard">{meal.strMeal}</div>
             <div>
               {' '}
-              {item.strCategory} / {item.strArea}{' '}
+              {meal.strCategory} / {meal.strArea}{' '}
             </div>
           </div>
-          <img className="ImgRecipe" src={item.strMealThumb} alt={item.strCategory} />
-          <div bsclass="card" item={item} />
+          <img className="ImgRecipe" src={meal.strMealThumb} alt={meal.strCategory} />
+          <div bsclass="card" meal={meal} />
           <div>
-            <div>{item.strInstructions}</div>
+            <div>{meal.strInstructions}</div>
+            <IngredientsList meal={meal} />
             <div className="VideoRecipe">
-              <ReactPlayer className="VideoRecipe" url={item.strYoutube} />
+              <ReactPlayer className="VideoRecipe" url={meal.strYoutube} />
             </div>
           </div>
         </div>
