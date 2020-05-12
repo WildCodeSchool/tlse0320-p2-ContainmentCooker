@@ -110,7 +110,8 @@ class RecipesList extends React.Component {
                     </UncontrolledTooltip>
                     <CardBody>
                       <CardTitle className="card-title">{meal.strMeal}</CardTitle>
-                      <Button>See more</Button>
+                      <Button onClick={this.selectRecipe}>See more</Button>{' '}
+                      {/* Recuperer l'id de la recette ! */}
                     </CardBody>
                   </Card>
                 </Col>
