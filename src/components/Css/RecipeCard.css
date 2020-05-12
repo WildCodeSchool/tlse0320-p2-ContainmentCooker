@@ -22,7 +22,13 @@
   font-size: 50px;
   font-weight: bold;
   display: flex;
+  margin: auto;
   flex-direction: column;
+}
+
+.subTitleCard {
+  margin: auto;
+  display: flex;
 }
 
 .list-group-item {
@@ -92,11 +98,26 @@
 .ButtonRecipe {
   margin: auto;
   height: 60px;
-  padding: 10px;
-  padding: 10%;
   margin-top: 1%;
   margin-bottom: 2%;
   font-family: Source Sans Pro, sans-serif;
+  display: flex;
+  background-color: rgb(59, 59, 59);
+  height: 40px;
+  width: 150px;
+  border: 2px solid white;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.containerButtonRecipe {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 @media (max-width: 768px) {

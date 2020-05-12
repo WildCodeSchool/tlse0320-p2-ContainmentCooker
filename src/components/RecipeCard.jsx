@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import PropTypes from 'prop-types';
 import ReactPlayer from 'react-player';
 import IngredientsList from './IngredientsList';
@@ -11,7 +10,7 @@ function RecipeCard({ meals }) {
         <div className="cardRecipe">
           <div className="cardRecipe">
             <div className="titleCard">{meal.strMeal}</div>
-            <div>
+            <div className="subTitleCard">
               {' '}
               {meal.strCategory} / {meal.strArea}{' '}
             </div>

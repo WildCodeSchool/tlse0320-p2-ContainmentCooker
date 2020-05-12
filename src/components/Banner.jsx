@@ -11,10 +11,10 @@ function Banner() {
       <div className="BannerUp">
         <div className="TitleButton">
           <Link to="/randompage" className="TitleRecipe">
-            Do not have any idea ?
+            Wanna see a recipe ?
           </Link>
           <Link to="/randompage" type="button" className="ButtonBanner">
-            See a recipe
+            Click here !
           </Link>
         </div>
         <div className="LogosBanner">

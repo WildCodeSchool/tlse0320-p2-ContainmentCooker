@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 15px;
+  height: 10px;
 }
 
 #hgr_bottom {
@@ -22,14 +22,18 @@
   position: fixed;
   z-index: 10000;
   background: white;
+  right: 0;
   top: 0;
-  height: 15px;
+  bottom: 0;
+  width: 20px;
 }
 
 #hgr_left {
   position: fixed;
   z-index: 10000;
   background: white;
+  top: 0;
+  bottom: 0;
   left: 0;
-  height: 15px;
+  width: 20px;
 }
