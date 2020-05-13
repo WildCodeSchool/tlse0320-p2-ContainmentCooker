@@ -5,15 +5,50 @@
   background-color: black;
   margin-left: auto;
   margin-right: auto;
-}
-
-.profile-image {
+  padding: 0;
   display: flex;
-  align-items: flex-end;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: black;
 }
 
-.profile-icone {
+.mr-auto {
+  width: 60%;
+}
+
+.image-header {
+  width: 30%;
+  height: auto;
+  margin-left: 0;
+}
+
+.link {
   color: white;
+  text-decoration: none;
+  font-family: Gotu;
+  font-size: 20px;
+  margin: 1%;
+}
+
+.link:hover {
+  color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .image-header {
+    width: 100%;
+  }
+  .link {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .image-header {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 990px) {
+  .image-header {
+    width: 50%;
+  }
 }

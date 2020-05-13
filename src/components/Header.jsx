@@ -1,29 +1,34 @@
 import React, { useState } from 'react';
 import './Header.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavbarText } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const [collapsed, setCollapsed] = useState(true);
+
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
     <div>
-      <Navbar className="Navbar-container" dark expand="md">
-        <NavbarBrand href="/">
-          <img
-            src="https://iili.io/JzNRz7.png"
-            width="650"
-            height="132"
-            className="d-inline-flex align-top"
-            alt="logo"
-          />
+      <Navbar className="header-div Navbar-container" dark>
+        <NavbarBrand href="/" className="mr-auto">
+          <img src="https://iili.io/JzNRz7.png" alt="logo" href="/" className="image-header" />
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <NavbarText className="profile-image">
-            <FontAwesome name="user-circle" size="4x" className="profile-icone" />
-          </NavbarText>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="/advanced-search-page" className="link">
+                Recipes
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/contact" className="link">
+                Contact
+              </NavLink>
+            </NavItem>
+          </Nav>
         </Collapse>
       </Navbar>
     </div>
