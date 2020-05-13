@@ -13,6 +13,7 @@
 .BannerUp {
   padding-top: 8%;
   background-image: url('../Images/steak8.png');
+  background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
   width: 100%;
