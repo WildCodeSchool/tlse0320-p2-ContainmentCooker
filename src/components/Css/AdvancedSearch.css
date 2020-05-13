@@ -1,10 +1,29 @@
 .select-by-area,
 .select-by-category {
   cursor: pointer;
-  width: 200px;
+  width: 220px;
   color: black;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  border: none;
+  padding: 2%;
+  font-family: Sans Pro, sans-serif;
 }
 
-.area {
-  text-decoration: white;
+.option-select {
+  text-decoration: black;
+  font-family: Sans Pro, sans-serif;
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+}
+
+.select-advanced {
+  margin-bottom: 2%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .select-by-area,
+  .select-by-category {
+    width: 220px;
+    border: none;
+    padding: 1%;
+  }
 }

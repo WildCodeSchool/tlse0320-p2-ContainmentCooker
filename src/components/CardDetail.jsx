@@ -5,11 +5,11 @@ import FontAwesome from 'react-fontawesome';
 
 export default function CardDetail(props) {
   return (
-    <div className="recipes-list-container">
-      <Col className="container-card-recipe">
+    <div>
+      <Col className="container-card-recipe card-detail">
         <Card className="card-recipe">
           <CardImg top src={props.strMealThumb} alt={props.strMeal} className="card-image" />
-          <div className="card-heart">
+          {/* <div className="card-heart">
             <FontAwesome
               className="recipe-not-love"
               name="heart"
@@ -19,8 +19,8 @@ export default function CardDetail(props) {
           </div>
           <UncontrolledTooltip placement="bottom" target="UncontrolledTooltip">
             Add to favorites
-          </UncontrolledTooltip>
-          <CardBody>
+          </UncontrolledTooltip> */}
+          <CardBody className="card-body">
             <CardTitle className="card-title">{props.strMeal}</CardTitle>
             <Button>See more</Button>
           </CardBody>

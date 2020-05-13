@@ -69,7 +69,7 @@ export default function AdvancedResultsRecipesList({
   recipesResultsInput1andInput2
 }) {
   return (
-    <div>
+    <div className="recipes-list-container">
       {rSelected === 1 ? (
         <Container className="main-container" fluid={true}>
           <Row xs="1" sm="2" md="3" xl="4">
@@ -106,11 +106,13 @@ export default function AdvancedResultsRecipesList({
         </Container>
       ) : rSelected !== 1 && rSelected !== 2 ? (
         <Container className="main-container" fluid={true}>
-          <Row xs="1" sm="2" md="3" xl="4">
-            {allRecipes.map(recipeResult => (
-              <CardDetail key={recipeResult.id} {...recipeResult} />
-            ))}
-          </Row>
+          <div className="recipes-list-container">
+            <Row xs="1" sm="2" md="3" xl="4">
+              {allRecipes.map(recipeResult => (
+                <CardDetail key={recipeResult.id} {...recipeResult} />
+              ))}
+            </Row>
+          </div>
         </Container>
       ) : (
         <></>
