@@ -33,6 +33,7 @@
 .subtitleCard {
   margin: auto;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .list-group-item {
@@ -50,12 +51,14 @@
   margin: auto;
   padding-bottom: 12%;
   text-align: justify;
+  margin-left: 20px;
 }
 
 .TitleInstructions {
   display: flex;
   margin: auto;
   margin-bottom: 3%;
+  margin-top: 25px;
 }
 
 .InstructionsList {
@@ -74,13 +77,11 @@
 }
 
 .ImgRecipe {
-  padding-top: 50px;
-  padding-bottom: 50px;
   display: inherit;
   margin: auto;
   width: 30%;
   height: 30%;
-  border-radius: 20%;
+  border: 5px solid white;
   display: flex;
 }
 

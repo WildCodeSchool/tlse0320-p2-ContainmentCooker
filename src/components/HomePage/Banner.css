@@ -30,14 +30,13 @@
 }
 
 .TitleButton {
-  padding-top: %;
   margin: auto;
 }
 
 .TitleRecipe {
   font-family: 'Dancing Script', sans serif;
   font-weight: bold;
-  font-size: 130px;
+  font-size: 140px;
   color: whitesmoke;
   font-weight: bold;
   display: flex;
