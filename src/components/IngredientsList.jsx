@@ -26,7 +26,9 @@ function IngredientsList({ meal }) {
         {ingredients.map((_, i) => (
           <ListGroupItem>
             {ingredients[i]}
-            <Badge pill>{measures[i]}</Badge>
+            <Badge className="badge" pill>
+              {measures[i]}
+            </Badge>
           </ListGroupItem>
         ))}
       </ListGroup>
