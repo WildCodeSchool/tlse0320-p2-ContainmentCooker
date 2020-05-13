@@ -8,6 +8,7 @@ import _ from 'lodash';
 import { Button, ButtonGroup } from 'reactstrap';
 import AdvancedSearch from './AdvancedSearch';
 import InMyFridge from './InMyFridge';
+import './Css/AdvancedSearchPage.css';
 
 export default function AdvancedSearchPage() {
   const [country, handleCountry] = useState('');
@@ -103,13 +104,23 @@ export default function AdvancedSearchPage() {
   return (
     <div>
       <Header />
-      <h2>Make your research choice</h2>
-      <ButtonGroup>
-        <Button color="primary" onClick={() => setRSelected(1)} active={rSelected === 1}>
-          Search by country and categorie
+      <h2 className="advanced-search-title">Make your research choice</h2>
+      <ButtonGroup className="advanced-search-button-choice">
+        <Button
+          className="advanced-search-button-country-category"
+          color="primary"
+          onClick={() => setRSelected(1)}
+          active={rSelected === 1}
+        >
+          Filter by country/category
         </Button>
-        <Button color="primary" onClick={() => setRSelected(2)} active={rSelected === 2}>
-          Search by ingredients
+        <Button
+          className="advanced-search-button-fridge"
+          color="primary"
+          onClick={() => setRSelected(2)}
+          active={rSelected === 2}
+        >
+          Filter by ingredients
         </Button>
       </ButtonGroup>
       {rSelected === 1 ? (

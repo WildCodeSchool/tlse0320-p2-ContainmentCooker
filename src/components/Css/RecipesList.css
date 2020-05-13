@@ -4,6 +4,14 @@
   margin-left: auto;
 }
 
+.main-container {
+  padding: 0;
+}
+
+.card-detail {
+  margin-bottom: 2% !important;
+}
+
 .card-title {
   color: black;
   white-space: nowrap;
@@ -14,6 +22,12 @@
 .recipe-not-love {
   color: white;
   margin-right: 1%;
+}
+
+.card-body {
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  font-family: Sans;
+  font-family: Source Sans Pro, sans-serif;
 }
 
 .container-card-recipe {
