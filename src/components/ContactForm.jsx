@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './Css/ContactForm.css';
 
 const ContactForm = props => {
@@ -25,7 +25,9 @@ const ContactForm = props => {
           <Input type="radio" name="radio1" /> I want to the get the monthly newsletter
         </Label>
       </FormGroup>
-      <Button>Submit</Button>
+      <button type="submit" className="ButtonForm">
+        Submit
+      </button>
     </Form>
   );
 };

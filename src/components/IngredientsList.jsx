@@ -1,5 +1,6 @@
 import React from 'react';
 import { Badge, ListGroup, ListGroupItem } from 'reactstrap';
+import './Css/RecipeCard.css';
 
 function IngredientsList({ meal }) {
   const data = Object.entries(meal).reduce(
@@ -23,8 +24,9 @@ function IngredientsList({ meal }) {
     <div>
       <ListGroup>
         {ingredients.map((_, i) => (
-          <ListGroupItem className="card">
-            {ingredients[i]} <Badge pill>{measures[i]}</Badge>
+          <ListGroupItem>
+            {ingredients[i]}
+            <Badge pill>{measures[i]}</Badge>
           </ListGroupItem>
         ))}
       </ListGroup>

@@ -5,10 +5,11 @@ import Home from './components/Home';
 import ListPage from './components/ListPage';
 import RandomPage from './components/RandomPage';
 import ContactPage from './components/ContactPage';
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RecipePage from './components/RecipePage';
 import AdvancedSearchPage from './components/AdvancedSearchPage';
+
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" component={ContactPage} />
           <Route path="/list-categories/:strCategorie" component={ListPage} />
           <Route path="/list-recipes/:strIngredient" component={ListPage} />
+          <Route path="/recipe-page/:idMeal" component={RecipePage} />
           <Route path="/advanced-search-page" component={AdvancedSearchPage} />
         </Switch>
       </BrowserRouter>
