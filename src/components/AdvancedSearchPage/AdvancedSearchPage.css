@@ -1,0 +1,125 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+.button-groupe {
+  text-align: center;
+}
+
+.input-ingredient {
+  text-align: center;
+}
+
+.advanced-search-title {
+  font-size: 30px;
+  color: white;
+  font-family: Source Sans Pro, sans-serif;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 0;
+}
+
+.advanced-search-button-choice {
+  margin-bottom: 2%;
+  width: 30%;
+  padding: 1%;
+}
+
+.advanced-search-button-country-category,
+.advanced-search-button-fridge {
+  background: url('https://image.freepik.com/photos-gratuite/fond-texture-motifs-marbre-marbres-thailande-marbre-naturel-abstrait-noir-blanc-gris-pour-design_1253-914.jpg');
+  border-radius: 180px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 18px;
+  color: black;
+  border: black;
+}
+
+.advanced-search-button-fridge {
+  margin-left: 1px !important;
+}
+
+.advanced-search-button-country-category:hover,
+.advanced-search-button-fridge:hover {
+  background: black !important;
+}
+
+.advanced-search-button-country-category.active,
+.advanced-search-button-fridge.active {
+  background: black !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.advanced-search-button-country-category.active:focus,
+.advanced-search-button-fridge.active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .advanced-search-title {
+    font-size: 25px;
+    padding-bottom: 2%;
+  }
+
+  .advanced-search-button-choice {
+    width: 80%;
+    padding-bottom: 3%;
+  }
+
+  .advanced-search-button-country-category,
+  .advanced-search-button-fridge {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .advanced-search-title {
+    font-size: 27px;
+    padding-bottom: 2%;
+  }
+
+  .advanced-search-button-choice {
+    width: 50%;
+    padding-bottom: 3%;
+  }
+
+  .advanced-search-button-country-category,
+  .advanced-search-button-fridge {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .advanced-search-title {
+    font-size: 30px;
+    padding-bottom: 2%;
+  }
+
+  .advanced-search-button-choice {
+    width: 30%;
+    padding-bottom: 3%;
+  }
+
+  .advanced-search-button-country-category,
+  .advanced-search-button-fridge {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1306px) {
+  .advanced-search-title {
+    font-size: 30px;
+    padding-bottom: 2%;
+  }
+
+  .advanced-search-button-choice {
+    width: 30%;
+    padding-bottom: 3%;
+  }
+
+  .advanced-search-button-country-category,
+  .advanced-search-button-fridge {
+    font-size: 14px;
+  }
+}

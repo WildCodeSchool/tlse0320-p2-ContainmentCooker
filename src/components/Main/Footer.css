@@ -1,0 +1,76 @@
+.Footer {
+  height: 180px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.FooterUpper,
+.FooterBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-top: 20px;
+}
+
+.FooterUpName {
+  color: #ffffff;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.FooterBottomName {
+  color: #ffffff;
+  list-style-type: none;
+}
+
+.FooterUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#PopoverFocus {
+  margin: 10px;
+}
+
+.FooterEmail {
+  margin: 10px;
+}
+
+.socialNet {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.LogosFooter {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: auto;
+}
+
+.LogosSocial {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .Footer {
+    flex-wrap: wrap;
+  }
+  .FooterBottom {
+    padding-top: 10px;
+    margin-bottom: 40px;
+  }
+}

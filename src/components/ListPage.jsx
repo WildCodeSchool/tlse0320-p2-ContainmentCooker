@@ -1,8 +1,8 @@
 import React from 'react';
-import RecipesList from './RecipesList';
-import Header from './Header';
-import Footer from './Footer';
-import SearchBar from './SearchBar';
+import RecipesList from './AdvancedSearchPage/RecipesList';
+import Header from './Main/Header';
+import Footer from './Main/Footer';
+import SearchBar from './Main/SearchBar';
 
 export default function ListPage() {
   return (
