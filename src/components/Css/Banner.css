@@ -11,12 +11,11 @@
 }
 
 .BannerUp {
-  padding-top: 4%;
-  background-image: url('BannerImg.png');
+  padding-top: 8%;
+  background-image: url('steak8.png');
   background-repeat: no-repeat;
-  height: auto;
-  width: 90%;
   height: 700px;
+  width: 100%;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -31,17 +30,18 @@
 }
 
 .TitleButton {
-  padding-top: 10%;
-  margin-left: 10%;
+  padding-top: %;
+  margin: auto;
 }
 
 .TitleRecipe {
   font-family: 'Dancing Script', sans serif;
   font-weight: bold;
-  font-size: 95px;
+  font-size: 130px;
   color: whitesmoke;
   font-weight: bold;
   display: flex;
+  margin: auto;
 }
 
 .TitleRecipe:hover {
@@ -54,18 +54,21 @@
 }
 
 .ButtonBanner {
-  font-family: 'Dancing Script', sans serif;
-  font-size: 30px;
-  border: none;
-  outline: none;
-  display: inherit;
-  margin-left: 45%;
-  width: 120px;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: white;
-  background: transparent;
-  box-shadow: 0 3px 20px 0 #ecd9d93b;
+  font-family: Source Sans Pro, sans-serif;
+  display: flex;
+  margin: auto;
+  background-color: rgb(59, 59, 59);
+  height: 40px;
+  width: 150px;
+  border: 2px solid white;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .ButtonBanner:hover::before {
@@ -86,7 +89,7 @@
 .LogosBanner {
   display: inherit;
   width: 70%;
-  padding-top: 5%;
+  padding-top: 6%;
   margin: auto;
   justify-content: space-between;
 }
@@ -105,7 +108,6 @@
   color: white;
   display: inherit;
   padding-bottom: 5%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .TitleBanner {
