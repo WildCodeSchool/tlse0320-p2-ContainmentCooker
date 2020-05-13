@@ -2,10 +2,11 @@
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 .main-container {
-  padding: 0;
+  width: 90% !important;
 }
 
 .card-detail {

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function CardDetail(props) {
   return (
-    <div>
+    <div className="recipes-list-container">
       <Col className="container-card-recipe card-detail">
         <Card className="card-recipe">
           <CardImg top src={props.strMealThumb} alt={props.strMeal} className="card-image" />

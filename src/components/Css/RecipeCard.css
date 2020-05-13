@@ -25,6 +25,11 @@
   flex-direction: column;
 }
 
+.badge {
+  margin-left: 10px;
+  padding: 5px !important;
+}
+
 .subtitleCard {
   margin: auto;
   display: flex;

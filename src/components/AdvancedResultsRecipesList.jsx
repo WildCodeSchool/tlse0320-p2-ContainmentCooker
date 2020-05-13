@@ -41,9 +41,13 @@ function ingredients(
     ingredient3 &&
     recipesIngredient3
   ) {
-    return recipesIngredientResults;
+    return recipesIngredientResults.length < 1
+      ? recipesResultsInput1andInput2
+      : recipesIngredientResults;
   } else if (ingredient1 && recipesIngredient1 && ingredient2 && recipesIngredient2) {
-    return recipesResultsInput1andInput2;
+    return recipesResultsInput1andInput2.length < 1
+      ? recipesIngredient1
+      : recipesResultsInput1andInput2;
   } else if (ingredient1 && recipesIngredient1) {
     return recipesIngredient1;
   } else {
@@ -69,7 +73,7 @@ export default function AdvancedResultsRecipesList({
   recipesResultsInput1andInput2
 }) {
   return (
-    <div className="recipes-list-container">
+    <div>
       {rSelected === 1 ? (
         <Container className="main-container" fluid={true}>
           <Row xs="1" sm="2" md="3" xl="4">
