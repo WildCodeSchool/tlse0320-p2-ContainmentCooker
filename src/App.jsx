@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/HomePage/Home';
 import ListPage from './components/ListPage';
-import RandomPage from './components/RandomPage';
-import ContactPage from './components/ContactPage';
+import RandomPage from './components/RecipePage/RandomPage';
+import ContactPage from './components/ContactPage/ContactPage';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RecipePage from './components/RecipePage';
-import AdvancedSearchPage from './components/AdvancedSearchPage';
+import RecipePage from './components/RecipePage/RecipePage';
+import AdvancedSearchPage from './components/AdvancedSearchPage/AdvancedSearchPage';
 
 function App() {
   return (
