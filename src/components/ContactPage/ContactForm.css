@@ -1,0 +1,29 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+.Form {
+  width: 100%;
+  padding: 10%;
+  margin: auto;
+  color: white;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ButtonForm {
+  font-family: Source Sans Pro, sans-serif;
+  display: flex;
+  margin: auto;
+  background-color: rgb(59, 59, 59);
+  height: 40px;
+  width: 150px;
+  border: 2px solid white;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
