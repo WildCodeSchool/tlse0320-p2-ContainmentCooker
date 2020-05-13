@@ -13,6 +13,11 @@ class SearchBar extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  componentDidMount() {
+    const listOfIngredients = this.loadIngredients();
+    console.log(listOfIngredients);
+  }
+
   handleSubmit(event) {
     event.preventDefault();
   }
@@ -21,11 +26,6 @@ class SearchBar extends React.Component {
     this.setState({
       ingredientsValue: event.target.value
     });
-  }
-
-  componentDidMount() {
-    const listOfIngredients = this.loadIngredients();
-    console.log(listOfIngredients);
   }
 
   loadIngredients() {
@@ -43,7 +43,7 @@ class SearchBar extends React.Component {
     return (
       <div className="SearchBar">
         <h2 className="SearchTitle"> Give me one ingredient, I give you some recipes !</h2>
-        <div id="searcharea">
+        <div className="searcharea">
           <input
             list="data"
             value={this.state.ingredientsValue}
@@ -51,9 +51,9 @@ class SearchBar extends React.Component {
             onSubmit={this.handleSubmit}
             type="text"
             placeholder="Your main ingredient"
-            id="bar"
+            className="bar"
           />
-          <datalist id="data">
+          <datalist className="data">
             {this.state.listIngredients.map((item, key) => (
               <option key={key} value={item.strIngredient} />
             ))}
@@ -61,7 +61,7 @@ class SearchBar extends React.Component {
           <Link to={{ pathname: `/list-recipes/${this.state.ingredientsValue}` }}>
             <img
               src="https://pngimage.net/wp-content/uploads/2018/06/icone-loupe-png-2.png"
-              id="searchsubmit"
+              className="searchsubmit"
               alt="loupe"
             />
           </Link>
