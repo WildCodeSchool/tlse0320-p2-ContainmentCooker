@@ -9,7 +9,6 @@
 }
 
 .cardRecipe {
-  background: rgba(0, 0, 0, 0.5) !important;
   color: white;
   font-size: 20px;
   display: flex;
@@ -26,7 +25,7 @@
   flex-direction: column;
 }
 
-.subTitleCard {
+.subtitleCard {
   margin: auto;
   display: flex;
 }
@@ -114,10 +113,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-
-.containerButtonRecipe {
-  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 @media (max-width: 768px) {

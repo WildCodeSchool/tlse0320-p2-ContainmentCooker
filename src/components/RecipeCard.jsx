@@ -10,7 +10,7 @@ function RecipeCard({ meals }) {
         <div className="cardRecipe">
           <div className="cardRecipe">
             <div className="titleCard">{meal.strMeal}</div>
-            <div className="subTitleCard">
+            <div className="subtitleCard">
               {' '}
               {meal.strCategory} / {meal.strArea}{' '}
             </div>
