@@ -9,10 +9,12 @@ class InMyFridge extends React.Component {
       listIngredients: []
     };
   }
+
   componentDidMount() {
     const listOfIngredients = this.loadIngredients();
     console.log(listOfIngredients);
   }
+
   loadIngredients() {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/list.php?i=`)

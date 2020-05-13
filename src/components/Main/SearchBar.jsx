@@ -40,20 +40,21 @@ class SearchBar extends React.Component {
   }
 
   render() {
+    const { ingredientsValue } = this.props;
     return (
       <div className="SearchBar">
         <h2 className="SearchTitle"> Give me one ingredient, I give you some recipes !</h2>
         <div className="searcharea">
           <input
             list="data"
-            value={this.state.ingredientsValue}
+            value={ingredientsValue}
             onChange={this.handleChange}
             onSubmit={this.handleSubmit}
             type="text"
             placeholder="Your main ingredient"
             className="bar"
           />
-          <datalist className="data">
+          <datalist id="data">
             {this.state.listIngredients.map((item, key) => (
               <option key={key} value={item.strIngredient} />
             ))}
