@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import RecipePage from './components/RecipePage';
 import AdvancedSearchPage from './components/AdvancedSearchPage';
 
-
 function App() {
   return (
     <div className="App">

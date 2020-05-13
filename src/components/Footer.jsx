@@ -28,31 +28,29 @@ function Footer() {
       </div>
 
       <div className="FooterBottom">
-        <div>
-          <h2 className="FooterBottomName">Follow us</h2>
-          <ul className="socialNet">
-            <li className="LogosFooter">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
-                <img className="LogosSocial" src={Facebook} alt="Facebook" />
-              </a>
-            </li>
-            <li className="LogosFooter">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/">
-                <img className="LogosSocial" src={Tweeter} alt="Tweeter" />
-              </a>
-            </li>
-            <li className="LogosFooter">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
-                <img className="LogosSocial" src={Instagram} alt="Instagram" />
-              </a>
-            </li>
-            <li className="LogosFooter">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">
-                <img className="LogosSocial" src={Youtube} alt="Youtube" />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h2 className="FooterBottomName">Follow us</h2>
+        <ul className="socialNet">
+          <li className="LogosFooter">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
+              <img className="LogosSocial" src={Facebook} alt="Facebook" />
+            </a>
+          </li>
+          <li className="LogosFooter">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/">
+              <img className="LogosSocial" src={Tweeter} alt="Tweeter" />
+            </a>
+          </li>
+          <li className="LogosFooter">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
+              <img className="LogosSocial" src={Instagram} alt="Instagram" />
+            </a>
+          </li>
+          <li className="LogosFooter">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">
+              <img className="LogosSocial" src={Youtube} alt="Youtube" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

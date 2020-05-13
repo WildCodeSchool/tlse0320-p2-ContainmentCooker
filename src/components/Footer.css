@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: auto;
+  margin-bottom: 40px;
 }
 .FooterUpper,
 .FooterBottom {
@@ -16,7 +16,6 @@
   align-items: center;
   width: 90%;
   padding-top: 20px;
-  margin: auto;
 }
 
 .FooterUpName {
@@ -69,5 +68,9 @@
 @media (max-width: 1024px) {
   .Footer {
     flex-wrap: wrap;
+  }
+  .FooterBottom {
+    padding-top: 10px;
+    margin-bottom: 40px;
   }
 }
