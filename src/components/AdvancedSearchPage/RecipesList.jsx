@@ -1,17 +1,5 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
-import {
-  Card,
-  CardImg,
-  CardBody,
-  Row,
-  Col,
-  Container,
-  CardTitle,
-  Button,
-  UncontrolledTooltip,
-  Spinner
-} from 'reactstrap';
+import { Card, CardImg, CardBody, Row, Col, Container, CardTitle, Spinner } from 'reactstrap';
 import { withRouter, Link } from 'react-router-dom';
 import axios from 'axios';
 import PropTypes from 'prop-types';
@@ -73,9 +61,9 @@ class RecipesList extends React.Component {
       })
       .then(data => {
         return data.meals
-          .map(a => a.strCategory)
-          .filter(a => {
-            return a !== 'Dessert' && a !== 'Breakfast' && a !== 'Starter';
+          .map(category => category.strCategory)
+          .filter(item => {
+            return item !== 'Dessert' && item !== 'Breakfast' && item !== 'Starter';
           });
       })
       .then(response => {
