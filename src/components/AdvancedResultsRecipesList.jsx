@@ -41,9 +41,11 @@ function ingredients(
     ingredient3 &&
     recipesIngredient3
   ) {
-    return recipesIngredientResults.length < 1
+    return recipesIngredientResults.length > 0
+      ? recipesIngredientResults
+      : recipesResultsInput1andInput2.length > 0
       ? recipesResultsInput1andInput2
-      : recipesIngredientResults;
+      : recipesIngredient1;
   } else if (ingredient1 && recipesIngredient1 && ingredient2 && recipesIngredient2) {
     return recipesResultsInput1andInput2.length < 1
       ? recipesIngredient1
