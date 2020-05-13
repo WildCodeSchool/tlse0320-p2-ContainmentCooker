@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+.categories-link {
+  color: white;
+  text-decoration: none;
+}
+
+.categories-link:hover {
+  color: white;
+}
+
+.container-image {
+  padding: 1%;
+  position: relative;
+  text-emphasis: center;
+  color: white;
+  margin-top: 1%;
+}
+
+.categorie-title-main::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: white;
+  margin-top: 2%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.categorie-title-main {
+  font-size: 60px;
+  color: white;
+  font-family: Dancing Script, sans-serif;
+  text-shadow: 2px 2px 2px black;
+}
+
+.categorie-love {
+  font-size: 40px;
+  color: white;
+  font-family: Source Sans Pro, sans-serif;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.title-categorie {
+  font-size: 40px;
+  padding: 3%;
+  margin-bottom: 10%;
+  position: absolute;
+  font-family: Dancing Script, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.categoriesList {
+  text-align: left;
+}
+
+.categorie-image {
+  width: 95%;
+  border-radius: 5%;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.75;
+}
+.categorie-image {
+  max-width: 100%;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.categorie-image * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.categorie-image:hover {
+  -moz-transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+  opacity: 1.1;
+  color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .categorie-title-main {
+    font-size: 40px;
+  }
+
+  .categorie-love {
+    font-size: 20px;
+  }
+
+  .categorie-image {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-categorie {
+    font-size: 20px;
+  }
+
+  .categorie-title-main::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: white;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    box-shadow: 2px 2px 2px black;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 990px) {
+  .title-categorie {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 991px) and (max-device-width: 1024px) {
+  .title-categorie {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .categorie-title-main {
+    font-size: 50px;
+  }
+
+  .categorie-love {
+    font-size: 30px;
+  }
+
+  .categorie-image {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-categorie {
+    font-size: 20px;
+  }
+
+  .categorie-title-main::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: white;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    box-shadow: 2px 2px 2px black;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .categorie-love {
+    font-size: 30px;
+  }
+}

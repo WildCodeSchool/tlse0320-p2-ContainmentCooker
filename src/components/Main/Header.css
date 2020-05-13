@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+
+.Navbar-container {
+  width: 100%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+}
+
+.mr-auto {
+  width: 60%;
+}
+
+.image-header {
+  width: 45%;
+  min-height: 50px;
+  min-width: 200px;
+  margin-left: 0;
+}
+
+.link {
+  color: white !important;
+  text-decoration: none;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 20px;
+  margin: 1%;
+}
+
+.link:hover {
+  color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .image-header {
+    width: 100%;
+  }
+  .link {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .image-header {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 990px) {
+  .image-header {
+    width: 50%;
+  }
+}
