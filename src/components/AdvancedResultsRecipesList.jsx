@@ -2,7 +2,6 @@ import React from 'react';
 import './Css/RecipesList.css';
 import { Row, Container } from 'reactstrap';
 import CardDetail from './CardDetail';
-import './Css/RecipesList.css';
 
 function select(
   country,
@@ -70,7 +69,7 @@ export default function AdvancedResultsRecipesList({
   recipesResultsInput1andInput2
 }) {
   return (
-    <div>
+    <div className="recipes-list-container">
       {rSelected === 1 ? (
         <Container className="main-container" fluid={true}>
           <Row xs="1" sm="2" md="3" xl="4">

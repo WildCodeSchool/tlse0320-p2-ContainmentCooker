@@ -48,9 +48,9 @@ class AdvancedSearch extends React.Component {
             onChange={e => handleCountry(e.target.value)}
             className="select-by-area"
           >
-            <option>Choose your country</option>
+            <option className="option-select">Choose your country</option>
             {this.state.listArea.map((item, key) => (
-              <option key={key} value={item.strArea} className="area">
+              <option key={key} value={item.strArea} className="option-select">
                 {item.strArea}
               </option>
             ))}
@@ -65,9 +65,9 @@ class AdvancedSearch extends React.Component {
             list="data-category"
             className="select-by-category"
           >
-            <option>Choose your category</option>
+            <option className="option-select">Choose your category</option>
             {this.state.listCategory.map((item, key) => (
-              <option key={key} value={item.strCategory}>
+              <option key={key} value={item.strCategory} className="option-select">
                 {item.strCategory}
               </option>
             ))}

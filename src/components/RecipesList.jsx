@@ -96,7 +96,7 @@ class RecipesList extends React.Component {
                       alt={meal.strMeal}
                       className="card-image"
                     />
-                    <div className="card-heart">
+                    {/* <div className="card-heart">
                       <FontAwesome
                         onClick={this.remove}
                         className="recipe-not-love"
@@ -107,8 +107,8 @@ class RecipesList extends React.Component {
                     </div>
                     <UncontrolledTooltip placement="bottom" target="UncontrolledTooltip">
                       Add to favorites
-                    </UncontrolledTooltip>
-                    <CardBody>
+                    </UncontrolledTooltip> */}
+                    <CardBody className="card-body">
                       <CardTitle className="card-title">{meal.strMeal}</CardTitle>
                       <Button>See more</Button>
                     </CardBody>

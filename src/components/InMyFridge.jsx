@@ -35,13 +35,14 @@ class InMyFridge extends React.Component {
     } = this.props;
     return (
       <div className="input-ingredient">
-        <form>
+        <form className="form-search">
           <input
             type="text"
             placeholder="Ingredient 1"
             value={ingredient1}
             onChange={e => handleIngredient1(e.target.value)}
             list="data"
+            className="input-fridge"
           />
           {ingredient1 ? (
             <input
@@ -50,6 +51,7 @@ class InMyFridge extends React.Component {
               value={ingredient2}
               onChange={e => handleIngredient2(e.target.value)}
               list="data"
+              className="input-fridge"
             />
           ) : (
             <></>
@@ -61,6 +63,7 @@ class InMyFridge extends React.Component {
               value={ingredient3}
               onChange={e => handleIngredient3(e.target.value)}
               list="data"
+              className="input-fridge"
             />
           ) : (
             <></>
