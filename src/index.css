@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 8px;
 }
 
 #hgr_bottom {
@@ -25,7 +25,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 20px;
+  width: 15px;
 }
 
 #hgr_left {
@@ -35,5 +35,5 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 20px;
+  width: 15px;
 }

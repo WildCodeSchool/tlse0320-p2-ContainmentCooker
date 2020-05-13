@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -24,7 +22,7 @@ function RecipeClick() {
         <div className="cardRecipe">
           <div className="cardRecipe">
             <div className="titleCard">{meal.strMeal}</div>
-            <div>
+            <div className="subtitleCard">
               {' '}
               {meal.strCategory} / {meal.strArea}{' '}
             </div>
