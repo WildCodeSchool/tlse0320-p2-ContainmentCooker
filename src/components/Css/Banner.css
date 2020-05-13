@@ -108,12 +108,19 @@
   color: white;
   display: inherit;
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .TitleBanner {
   color: white;
   font-family: 'Dancing Script', sans serif;
   font-size: 50px;
+  border: ivory 2px solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
 }
 
 .TitleBanner:hover {
