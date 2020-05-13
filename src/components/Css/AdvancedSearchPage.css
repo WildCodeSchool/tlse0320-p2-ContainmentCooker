@@ -1,4 +1,11 @@
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gotu&family=Source+Sans+Pro&display=swap';
+.button-groupe {
+  text-align: center;
+}
+
+.input-ingredient {
+  text-align: center;
+}
 
 .advanced-search-title {
   font-size: 30px;

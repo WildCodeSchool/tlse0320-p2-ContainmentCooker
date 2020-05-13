@@ -34,7 +34,7 @@ class InMyFridge extends React.Component {
       handleIngredient3
     } = this.props;
     return (
-      <div className="input-ingredient">
+      <div>
         <form className="form-search">
           <input
             type="text"

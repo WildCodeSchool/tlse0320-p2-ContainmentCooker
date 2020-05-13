@@ -9,7 +9,19 @@
 }
 
 .card-detail {
+  text-align: center;
   margin-bottom: 2% !important;
+}
+
+.ButtonDisplay {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.ButtonDisplay:hover {
+  color: rgba(70, 69, 66, 0.87);
+  text-decoration: none;
 }
 
 .card-title {
@@ -17,6 +29,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 
 .recipe-not-love {

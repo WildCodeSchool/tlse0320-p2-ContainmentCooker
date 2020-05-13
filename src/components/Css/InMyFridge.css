@@ -2,6 +2,10 @@
   margin-bottom: 3%;
 }
 
+.input-ingredient {
+  text-align: center;
+}
+
 .input-fridge {
   width: 15%;
   line-height: 25px;

@@ -104,46 +104,53 @@ export default function AdvancedSearchPage() {
     <div>
       <Header />
       <h2 className="advanced-search-title">Make your research choice</h2>
-      <ButtonGroup className="advanced-search-button-choice">
-        <Button
-          className="advanced-search-button-country-category"
-          color="primary"
-          onClick={() => setRSelected(1)}
-          active={rSelected === 1}
-        >
-          Filter by country/category
-        </Button>
-        <Button
-          className="advanced-search-button-fridge"
-          color="primary"
-          onClick={() => setRSelected(2)}
-          active={rSelected === 2}
-        >
-          Filter by ingredients
-        </Button>
-      </ButtonGroup>
+      <div className="button-groupe">
+        <ButtonGroup className="advanced-search-button-choice">
+          <Button
+            className="advanced-search-button-country-category"
+            color="primary"
+            onClick={() => setRSelected(1)}
+            active={rSelected === 1}
+          >
+            Filter by country/category
+          </Button>
+
+          <Button
+            className="advanced-search-button-fridge"
+            color="primary"
+            onClick={() => setRSelected(2)}
+            active={rSelected === 2}
+          >
+            Filter by ingredients
+          </Button>
+        </ButtonGroup>
+      </div>
       {rSelected === 1 ? (
-        <AdvancedSearch
-          handleCountry={handleCountry}
-          country={country}
-          handleCategory={handleCategory}
-          category={category}
-          recipesResults={recipesResults}
-        />
+        <div className="input-ingredient">
+          <AdvancedSearch
+            handleCountry={handleCountry}
+            country={country}
+            handleCategory={handleCategory}
+            category={category}
+            recipesResults={recipesResults}
+          />
+        </div>
       ) : rSelected === 2 ? (
-        <InMyFridge
-          ingredient1={ingredient1}
-          ingredient2={ingredient2}
-          ingredient3={ingredient3}
-          handleIngredient1={handleIngredient1}
-          handleIngredient2={handleIngredient2}
-          handleIngredient3={handleIngredient3}
-          recipesIngredient1={recipesIngredient1}
-          recipesIngredient2={recipesIngredient2}
-          recipesIngredient3={recipesIngredient3}
-          recipesIngredientResults={recipesIngredientResults}
-          recipesResultsInput1andInput2={recipesResultsInput1andInput2}
-        />
+        <div className="input-ingredient">
+          <InMyFridge
+            ingredient1={ingredient1}
+            ingredient2={ingredient2}
+            ingredient3={ingredient3}
+            handleIngredient1={handleIngredient1}
+            handleIngredient2={handleIngredient2}
+            handleIngredient3={handleIngredient3}
+            recipesIngredient1={recipesIngredient1}
+            recipesIngredient2={recipesIngredient2}
+            recipesIngredient3={recipesIngredient3}
+            recipesIngredientResults={recipesIngredientResults}
+            recipesResultsInput1andInput2={recipesResultsInput1andInput2}
+          />
+        </div>
       ) : (
         <></>
       )}
