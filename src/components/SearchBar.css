@@ -32,10 +32,8 @@
   border-radius: 20px;
   margin-right: 1%;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
-/*.bar, .searchsubmit {
-  align-items: center;
-}*/
 
 .SearchTitle {
   text-align: center;

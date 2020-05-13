@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import AdvancedResultsRecipesList from './AdvancedResultsRecipesList';
 import Header from './Header';
 import Footer from './Footer';
-import './Css/ListPage.css';
 import axios from 'axios';
 import _ from 'lodash';
 import { Button, ButtonGroup } from 'reactstrap';
