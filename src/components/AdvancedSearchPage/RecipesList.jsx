@@ -29,6 +29,25 @@ class RecipesList extends React.Component {
     }
   }
 
+  componentDidUpdate(prevProps) {
+    const prevCategorieId = prevProps.match.params.strCategorie;
+    if (prevCategorieId !== 'maindish') {
+      const linkFrom = window.location.pathname;
+      const {
+        match: {
+          params: { strCategorie }
+        }
+      } = this.props;
+      if (linkFrom.indexOf('list-categories') !== -1 && prevCategorieId !== prevProps) {
+        this.loadCategorieList(strCategorie);
+      } else {
+        const strIngredient = this.props.match.params.strIngredient;
+        console.log(strIngredient);
+        this.loadIngredientRecipesList(strIngredient);
+      }
+    }
+  }
+
   loadCategorieList(strCategorie) {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${strCategorie}`)
@@ -62,8 +81,8 @@ class RecipesList extends React.Component {
       .then(data => {
         return data.meals
           .map(category => category.strCategory)
-          .filter(item => {
-            return item !== 'Dessert' && item !== 'Breakfast' && item !== 'Starter';
+          .filter(category => {
+            return category !== 'Dessert' && category !== 'Breakfast' && category !== 'Starter';
           });
       })
       .then(response => {
