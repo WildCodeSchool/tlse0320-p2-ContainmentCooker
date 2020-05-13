@@ -26,32 +26,17 @@ class RecipesList extends React.Component {
     };
   }
 
-  componentDidUpdate(prevProps) {
-    const linkFrom = window.location.pathname;
-    const {
-      match: {
-        params: { strCategorie }
-      }
-    } = this.props;
-    const prevCategorieId = prevProps.match.params.strCategorie;
-    if (linkFrom.indexOf('list-categories') !== -1 && prevCategorieId !== prevProps) {
-      this.loadCategorieList(strCategorie);
-    } else {
-      const strIngredient = this.props.match.params.strIngredient;
-      console.log(strIngredient);
-      this.loadIngredientRecipesList(strIngredient);
-    }
-  }
-
   componentDidMount() {
     const linkFrom = window.location.pathname;
     if (linkFrom.indexOf('list-categories') !== -1) {
-      const strCategorie = this.props.match.params.strCategorie;
-      console.log(strCategorie);
-      this.loadCategorieList(strCategorie);
+      if (linkFrom.indexOf('maindish') !== -1) {
+        this.loadMainDish();
+      } else {
+        const strCategorie = this.props.match.params.strCategorie;
+        this.loadCategorieList(strCategorie);
+      }
     } else {
       const strIngredient = this.props.match.params.strIngredient;
-      console.log(strIngredient);
       this.loadIngredientRecipesList(strIngredient);
     }
   }
@@ -76,6 +61,47 @@ class RecipesList extends React.Component {
           meals: data.meals,
           strIngredient
         });
+      });
+  }
+
+  loadMainDish() {
+    axios
+      .get('https://www.themealdb.com/api/json/v1/1/list.php?c=list')
+      .then(response => {
+        console.log(response);
+        return response.data;
+      })
+      .then(data => {
+        return data.meals
+          .map(a => a.strCategory)
+          .filter(a => {
+            return a !== 'Dessert' && a !== 'Breakfast' && a !== 'Starter';
+          });
+      })
+      .then(response => {
+        const arrayGet = [];
+        for (let i = 0; i < response.length; i++) {
+          let str = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=' + response[i];
+          arrayGet.push(axios.get(str));
+        }
+        axios
+          .all(arrayGet)
+          .then(
+            axios.spread(function(...res) {
+              console.log('res', res);
+              let recipe = [];
+              for (let j = 0; j < res.length; j++) {
+                recipe = [...recipe, res[j].data.meals];
+              }
+              const meals = [].concat.apply([], recipe);
+              return meals;
+            })
+          )
+          .then(res => {
+            this.setState({
+              meals: res
+            });
+          });
       });
   }
 
