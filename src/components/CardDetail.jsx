@@ -2,6 +2,7 @@ import React from 'react';
 import './Css/RecipesList.css';
 import { Card, CardImg, CardBody, Col, CardTitle, Button, UncontrolledTooltip } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
+import { Link } from 'react-router-dom';
 
 export default function CardDetail(props) {
   return (
@@ -22,7 +23,14 @@ export default function CardDetail(props) {
           </UncontrolledTooltip> */}
           <CardBody className="card-body">
             <CardTitle className="card-title">{props.strMeal}</CardTitle>
-            <Button>See more</Button>
+            <Link
+              id={props.idMeal}
+              to={{ pathname: `/recipe-page/${props.idMeal}` }}
+              type="button"
+              className="ButtonDisplay"
+            >
+              See a recipe
+            </Link>
           </CardBody>
         </Card>
       </Col>

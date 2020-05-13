@@ -127,27 +127,31 @@ export default function AdvancedSearchPage() {
         </ButtonGroup>
       </div>
       {rSelected === 1 ? (
-        <AdvancedSearch
-          handleCountry={handleCountry}
-          country={country}
-          handleCategory={handleCategory}
-          category={category}
-          recipesResults={recipesResults}
-        />
+        <div className="input-ingredient">
+          <AdvancedSearch
+            handleCountry={handleCountry}
+            country={country}
+            handleCategory={handleCategory}
+            category={category}
+            recipesResults={recipesResults}
+          />
+        </div>
       ) : rSelected === 2 ? (
-        <InMyFridge
-          ingredient1={ingredient1}
-          ingredient2={ingredient2}
-          ingredient3={ingredient3}
-          handleIngredient1={handleIngredient1}
-          handleIngredient2={handleIngredient2}
-          handleIngredient3={handleIngredient3}
-          recipesIngredient1={recipesIngredient1}
-          recipesIngredient2={recipesIngredient2}
-          recipesIngredient3={recipesIngredient3}
-          recipesIngredientResults={recipesIngredientResults}
-          recipesResultsInput1andInput2={recipesResultsInput1andInput2}
-        />
+        <div className="input-ingredient">
+          <InMyFridge
+            ingredient1={ingredient1}
+            ingredient2={ingredient2}
+            ingredient3={ingredient3}
+            handleIngredient1={handleIngredient1}
+            handleIngredient2={handleIngredient2}
+            handleIngredient3={handleIngredient3}
+            recipesIngredient1={recipesIngredient1}
+            recipesIngredient2={recipesIngredient2}
+            recipesIngredient3={recipesIngredient3}
+            recipesIngredientResults={recipesIngredientResults}
+            recipesResultsInput1andInput2={recipesResultsInput1andInput2}
+          />
+        </div>
       ) : (
         <></>
       )}
