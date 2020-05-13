@@ -105,24 +105,27 @@ export default function AdvancedSearchPage() {
     <div>
       <Header />
       <h2 className="advanced-search-title">Make your research choice</h2>
-      <ButtonGroup className="advanced-search-button-choice">
-        <Button
-          className="advanced-search-button-country-category"
-          color="primary"
-          onClick={() => setRSelected(1)}
-          active={rSelected === 1}
-        >
-          Filter by country/category
-        </Button>
-        <Button
-          className="advanced-search-button-fridge"
-          color="primary"
-          onClick={() => setRSelected(2)}
-          active={rSelected === 2}
-        >
-          Filter by ingredients
-        </Button>
-      </ButtonGroup>
+      <div className="button-groupe">
+        <ButtonGroup className="advanced-search-button-choice">
+          <Button
+            className="advanced-search-button-country-category"
+            color="primary"
+            onClick={() => setRSelected(1)}
+            active={rSelected === 1}
+          >
+            Filter by country/category
+          </Button>
+
+          <Button
+            className="advanced-search-button-fridge"
+            color="primary"
+            onClick={() => setRSelected(2)}
+            active={rSelected === 2}
+          >
+            Filter by ingredients
+          </Button>
+        </ButtonGroup>
+      </div>
       {rSelected === 1 ? (
         <AdvancedSearch
           handleCountry={handleCountry}
