@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 
@@ -19,14 +19,14 @@ const Header = () => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/advanced-search-page" className="link">
+              <Link to="/advanced-search-page" type="button" className="link">
                 Recipes
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact" className="link">
+              <Link to="/contact" type="button" className="link">
                 Contact
-              </NavLink>
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>

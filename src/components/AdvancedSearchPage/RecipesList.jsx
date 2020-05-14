@@ -42,7 +42,6 @@ class RecipesList extends React.Component {
         this.loadCategorieList(strCategorie);
       } else {
         const strIngredient = this.props.match.params.strIngredient;
-        console.log(strIngredient);
         this.loadIngredientRecipesList(strIngredient);
       }
     }
@@ -75,7 +74,6 @@ class RecipesList extends React.Component {
     axios
       .get('https://www.themealdb.com/api/json/v1/1/list.php?c=list')
       .then(response => {
-        console.log(response);
         return response.data;
       })
       .then(data => {
@@ -95,7 +93,6 @@ class RecipesList extends React.Component {
           .all(arrayGet)
           .then(
             axios.spread(function(...res) {
-              console.log('res', res);
               let recipe = [];
               for (let j = 0; j < res.length; j++) {
                 recipe = [...recipe, res[j].data.meals];
@@ -114,7 +111,6 @@ class RecipesList extends React.Component {
 
   render() {
     const meals = this.state.meals;
-    console.log(meals);
     return (
       <Container className="main-container" fluid={true}>
         <div className="recipes-list-container">
@@ -129,18 +125,6 @@ class RecipesList extends React.Component {
                       alt={meal.strMeal}
                       className="card-image"
                     />
-                    {/* <div className="card-heart">
-                      <FontAwesome
-                        onClick={this.remove}
-                        className="recipe-not-love"
-                        name="heart"
-                        size="2x"
-                        id="UncontrolledTooltip"
-                      />
-                    </div>
-                    <UncontrolledTooltip placement="bottom" target="UncontrolledTooltip">
-                      Add to favorites
-                    </UncontrolledTooltip> */}
                     <CardBody className="card-body">
                       <CardTitle className="card-title">{meal.strMeal}</CardTitle>
                       <Link

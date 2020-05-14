@@ -14,7 +14,7 @@ function RecipeClick() {
       .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
       .then(response => response.data.meals)
       .then(response => setArrMeal(response));
-  }, [arrMeal]);
+  }, []);
 
   return (
     <div className="RecipeCard">

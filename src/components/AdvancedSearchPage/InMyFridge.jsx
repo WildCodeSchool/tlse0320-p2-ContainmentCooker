@@ -12,7 +12,6 @@ class InMyFridge extends React.Component {
 
   componentDidMount() {
     const listOfIngredients = this.loadIngredients();
-    console.log(listOfIngredients);
   }
 
   loadIngredients() {
