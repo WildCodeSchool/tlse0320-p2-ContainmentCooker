@@ -29,22 +29,13 @@ class RecipesList extends React.Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    const prevCategorieId = prevProps.match.params.strCategorie;
-    if (prevCategorieId !== 'maindish') {
-      const linkFrom = window.location.pathname;
-      const {
-        match: {
-          params: { strCategorie }
-        }
-      } = this.props;
-      if (linkFrom.indexOf('list-categories') !== -1 && prevCategorieId !== prevProps) {
-        this.loadCategorieList(strCategorie);
-      } else {
-        const strIngredient = this.props.match.params.strIngredient;
-        console.log(strIngredient);
-        this.loadIngredientRecipesList(strIngredient);
-      }
+  componentDidUpdate() {
+    const searchStrIngredient = window.location.pathname.split('/')[2];
+    const currentIng = this.state.strIngredient;
+    const linkFrom = window.location.pathname;
+    if (linkFrom.indexOf('list-recipes') !== -1 && searchStrIngredient !== currentIng) {
+      const strIngredient = this.props.match.params.strIngredient;
+      this.loadIngredientRecipesList(strIngredient);
     }
   }
 
@@ -75,7 +66,6 @@ class RecipesList extends React.Component {
     axios
       .get('https://www.themealdb.com/api/json/v1/1/list.php?c=list')
       .then(response => {
-        console.log(response);
         return response.data;
       })
       .then(data => {
@@ -95,7 +85,6 @@ class RecipesList extends React.Component {
           .all(arrayGet)
           .then(
             axios.spread(function(...res) {
-              console.log('res', res);
               let recipe = [];
               for (let j = 0; j < res.length; j++) {
                 recipe = [...recipe, res[j].data.meals];
@@ -114,7 +103,6 @@ class RecipesList extends React.Component {
 
   render() {
     const meals = this.state.meals;
-    console.log(meals);
     return (
       <Container className="main-container" fluid={true}>
         <div className="recipes-list-container">
