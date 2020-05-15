@@ -81,4 +81,12 @@
   .FooterBottomName {
     display: none;
   }
+
+  .socialNet {
+    margin: -20px;
+  }
+
+  .LogosFooter {
+    padding: 10px;
+  }
 }
