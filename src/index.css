@@ -37,3 +37,12 @@
   left: 0;
   width: 15px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 769px) {
+  #hgr_top,
+  #hgr_left,
+  #hgr_right,
+  #hgr_bottom {
+    display: none;
+  }
+}
