@@ -76,3 +76,17 @@
     margin-bottom: 40px;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .FooterBottomName {
+    display: none;
+  }
+
+  .socialNet {
+    margin: -20px;
+  }
+
+  .LogosFooter {
+    padding: 10px;
+  }
+}

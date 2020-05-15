@@ -76,6 +76,9 @@
     padding: 8px;
     margin-top: 12px;
   }
+  .SearchTitle {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 768px) {
